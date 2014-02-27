@@ -7,7 +7,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -24,6 +23,7 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 		this.setTitle(R.string.label_name); //set the Top title bar to the
 		
+		//add the back button
 		ActionBar actionBar = getActionBar();
 		actionBar.setDisplayHomeAsUpEnabled(true);
 		
@@ -36,8 +36,26 @@ public class MainActivity extends Activity {
 			         TextView clickedView = (TextView) view;
 			         String textClicked = clickedView.getText().toString();
 			         
-			         startActivity(new Intent(MainActivity.this, MainActivity.class));
-			         overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
+			         switch(position){
+			         	case 0: startActivity(new Intent(MainActivity.this, FrequenciesActivity.class));
+				         		overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
+				         		break;
+			         	case 1: startActivity(new Intent(MainActivity.this, LengthsActivity.class));
+		         				overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
+		         				break;
+			         	case 2: startActivity(new Intent(MainActivity.this, VelocitiesActivity.class));
+		         				overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
+		         				break;
+			         	case 3: startActivity(new Intent(MainActivity.this, DimensionlessActivity.class));
+		         				overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
+		         				break;
+			         	case 4: startActivity(new Intent(MainActivity.this, MiscellaneousActivity.class));
+		         				overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
+		         				break;
+			         	case 5: startActivity(new Intent(MainActivity.this, AboutActivity.class));
+		         				overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
+		         				break;
+			         }
 			     }
 		});
 	}
@@ -57,16 +75,16 @@ public class MainActivity extends Activity {
 		nameList.add("Miscellaneous");
 		nameList.add("About");
 	}	
-	
-	@Override
-	public void onBackPressed() {
-	    super.onBackPressed();
-	    overridePendingTransition(R.anim.left_slide_in, R.anim.right_slide_out);
-	}
-	@Override
-    public boolean onOptionsItemSelected(MenuItem menuItem){       
-        startActivity(new Intent(MainActivity.this,MainActivity.class));
-        onBackPressed();
-        return true;
-    }
+//	
+//	@Override
+//	public void onBackPressed() {
+//	    super.onBackPressed();
+//	    overridePendingTransition(R.anim.left_slide_in, R.anim.right_slide_out);
+//	}
+//	@Override
+//    public boolean onOptionsItemSelected(MenuItem menuItem){       
+//        startActivity(new Intent(MainActivity.this,FrequenciesActivity.class));
+//        onBackPressed();
+//        return true;
+//    }
 }

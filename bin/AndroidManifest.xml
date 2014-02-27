@@ -23,6 +23,30 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.example.fundamentalplasmaparameters.FrequenciesActivity"
+            android:label="@string/title_activity_frequencies" >
+        </activity>
+        <activity
+            android:name="com.example.fundamentalplasmaparameters.LengthsActivity"
+            android:label="@string/title_activity_lengths" >
+        </activity>
+        <activity
+            android:name="com.example.fundamentalplasmaparameters.VelocitiesActivity"
+            android:label="@string/title_activity_velocities" >
+        </activity>
+        <activity
+            android:name="com.example.fundamentalplasmaparameters.DimensionlessActivity"
+            android:label="@string/title_activity_dimensionless" >
+        </activity>
+        <activity
+            android:name="com.example.fundamentalplasmaparameters.MiscellaneousActivity"
+            android:label="@string/title_activity_miscellaneous" >
+        </activity>
+        <activity
+            android:name="com.example.fundamentalplasmaparameters.AboutActivity"
+            android:label="@string/title_activity_about" >
+        </activity>
     </application>
 
 </manifest>
