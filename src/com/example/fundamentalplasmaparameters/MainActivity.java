@@ -1,19 +1,16 @@
 package com.example.fundamentalplasmaparameters;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.SimpleAdapter;
 
 public class MainActivity extends Activity {
 	
-	List<Map<String, String>> optionsList = new ArrayList<Map<String, String>>();
+	ArrayList<String> nameList = new ArrayList<String>();
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -22,10 +19,9 @@ public class MainActivity extends Activity {
 		this.setTitle(R.string.label_name); //set the Top title bar to the
 		
 		initList();
-		ListView lv = (ListView) findViewById(R.id.listView);
-		
-		SimpleAdapter adapter =  new SimpleAdapter(this, optionsList, android.R.layout.simple_list_item_1, new String[] {"option"}, new int[] {android.R.id.text1});
-		lv.setAdapter(adapter);
+		ListView optionList = (ListView) findViewById(R.id.listView);
+		ArrayAdapter<String> adapter =  new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, nameList);
+		optionList.setAdapter(adapter); //populates list
 	}
 
 	@Override
@@ -36,29 +32,11 @@ public class MainActivity extends Activity {
 	}
 
 	private void initList(){
-		optionsList.add(createOption("option", "Option 1"));
-		optionsList.add(createOption("option", "Option 2"));
-		optionsList.add(createOption("option", "Option 1"));
-		optionsList.add(createOption("option", "Option 2"));
-		optionsList.add(createOption("option", "Option 1"));
-		optionsList.add(createOption("option", "Option 2"));
-		optionsList.add(createOption("option", "Option 1"));
-		optionsList.add(createOption("option", "Option 2"));
-		optionsList.add(createOption("option", "Option 1"));
-		optionsList.add(createOption("option", "Option 2"));
-		optionsList.add(createOption("option", "Option 1"));
-		optionsList.add(createOption("option", "Option 2"));
-		optionsList.add(createOption("option", "Option 1"));
-		optionsList.add(createOption("option", "Option 2"));
-		optionsList.add(createOption("option", "Option 1"));
-		optionsList.add(createOption("option", "Option 2"));
-		optionsList.add(createOption("option", "Option 1"));
-		optionsList.add(createOption("option", "Option 2"));
-	}
-	
-	private HashMap<String, String> createOption(String key, String name){
-		HashMap<String, String> option = new HashMap<String, String>();
-		option.put(key, name);
-		return option;
-	}
+		nameList.add("Frequencies");
+		nameList.add("Lengths");
+		nameList.add("Velocities");
+		nameList.add("Dimensionless");
+		nameList.add("Miscellaneous");
+		nameList.add("About");
+	}	
 }
