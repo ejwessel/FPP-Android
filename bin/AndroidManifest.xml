@@ -47,6 +47,10 @@
             android:name="com.example.fundamentalplasmaparameters.AboutActivity"
             android:label="@string/title_activity_about" >
         </activity>
+        <activity
+            android:name="com.example.fundamentalplasmaparameters.ElectronGyrofrequency"
+            android:label="@string/title_activity_electron_gyrofrequency" >
+        </activity>
     </application>
 
 </manifest>

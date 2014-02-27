@@ -1,14 +1,23 @@
 package com.example.fundamentalplasmaparameters;
 
-import android.os.Bundle;
+import java.util.ArrayList;
+
 import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.TextView;
 
 public class LengthsActivity extends Activity {
 
+	ArrayList<String> nameList = new ArrayList<String>();
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -16,6 +25,17 @@ public class LengthsActivity extends Activity {
 		
 		ActionBar actionBar = getActionBar();
 		actionBar.setDisplayHomeAsUpEnabled(true);
+		
+		initList();
+		ListView optionList = (ListView) findViewById(R.id.listView1);
+		ArrayAdapter<String> adapter =  new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, nameList);
+		optionList.setAdapter(adapter); //populates list
+		optionList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+			     public void onItemClick(AdapterView<?> parentAdapter, View view, int position, long id) {
+			         TextView clickedView = (TextView) view;
+			         String textClicked = clickedView.getText().toString();
+			     }
+		});
 	}
 
 	@Override
@@ -25,6 +45,16 @@ public class LengthsActivity extends Activity {
 		return true;
 	}
 
+	public void initList(){
+		nameList.add("Electron deBroglie Length");
+		nameList.add("Classical Dist. Min. App.");
+		nameList.add("Electron Gyroradius");
+		nameList.add("Ion Gyroradius");
+		nameList.add("Electron Inertial Length");
+		nameList.add("Ion Inertial Length");
+		nameList.add("Debye Length");
+	}
+	
 	@Override
 	public void onBackPressed() {
 	    super.onBackPressed();

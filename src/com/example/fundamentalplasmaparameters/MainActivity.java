@@ -28,7 +28,7 @@ public class MainActivity extends Activity {
 		actionBar.setDisplayHomeAsUpEnabled(true);
 		
 		initList();
-		ListView optionList = (ListView) findViewById(R.id.listView);
+		ListView optionList = (ListView) findViewById(R.id.listView1);
 		ArrayAdapter<String> adapter =  new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, nameList);
 		optionList.setAdapter(adapter); //populates list
 		optionList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -75,16 +75,4 @@ public class MainActivity extends Activity {
 		nameList.add("Miscellaneous");
 		nameList.add("About");
 	}	
-//	
-//	@Override
-//	public void onBackPressed() {
-//	    super.onBackPressed();
-//	    overridePendingTransition(R.anim.left_slide_in, R.anim.right_slide_out);
-//	}
-//	@Override
-//    public boolean onOptionsItemSelected(MenuItem menuItem){       
-//        startActivity(new Intent(MainActivity.this,FrequenciesActivity.class));
-//        onBackPressed();
-//        return true;
-//    }
 }
