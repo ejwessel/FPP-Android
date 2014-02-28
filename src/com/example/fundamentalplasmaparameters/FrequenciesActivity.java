@@ -35,8 +35,33 @@ public class FrequenciesActivity extends Activity {
 			         TextView clickedView = (TextView) view;
 			         String textClicked = clickedView.getText().toString();
 			         
-			         startActivity(new Intent(FrequenciesActivity.this, ElectronGyrofrequency.class));
-			         overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
+			         switch(position){
+				         case 0: startActivity(new Intent(FrequenciesActivity.this, ElectronGyrofrequency.class));
+					         	 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
+					         	 break;
+//				         case 1: startActivity(new Intent(FrequenciesActivity.this, IonGyrofrequency.class));
+//					         	 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
+//					         	 break;
+//				         case 2: startActivity(new Intent(FrequenciesActivity.this, ElectronPlasmaFrequency.class));
+//				         		 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
+//				         		 break;
+//				         case 3: startActivity(new Intent(FrequenciesActivity.this, IonPlasmaFrequency.class));
+//				         		 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
+//				         		 break;
+//				         case 4: startActivity(new Intent(FrequenciesActivity.this, ElectronTrappingRate.class));
+//		         		 		 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
+//		         		 		 break;
+//				         case 5: startActivity(new Intent(FrequenciesActivity.this, IonTrappingRate.class));
+//         		 		 		 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
+//         		 		 		 break;
+//				         case 6: startActivity(new Intent(FrequenciesActivity.this, ElectronCollisionRate.class));
+//         		 		 		 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
+//         		 		 		 break;
+//				         case 7: startActivity(new Intent(FrequenciesActivity.this, IonCollisionRate.class));
+//         		 		 		 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
+//         		 		 		 break;
+			         }
+			         
 			     }
 		});
 	}

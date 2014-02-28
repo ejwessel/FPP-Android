@@ -22,11 +22,7 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		this.setTitle(R.string.label_name); //set the Top title bar to the
-		
-		//add the back button
-		ActionBar actionBar = getActionBar();
-		actionBar.setDisplayHomeAsUpEnabled(true);
-		
+				
 		initList();
 		ListView optionList = (ListView) findViewById(R.id.listView1);
 		ArrayAdapter<String> adapter =  new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, nameList);

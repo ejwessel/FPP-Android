@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.fundamentalplasmaparameters"
+<manifest package="com.example.fundamentalplasmaparameters"
     android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionName="1.0" xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-sdk
         android:minSdkVersion="11"
@@ -25,31 +24,38 @@
         </activity>
         <activity
             android:name="com.example.fundamentalplasmaparameters.FrequenciesActivity"
-            android:label="@string/title_activity_frequencies" >
+            android:label="@string/title_activity_frequencies"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.example.fundamentalplasmaparameters.LengthsActivity"
-            android:label="@string/title_activity_lengths" >
+            android:label="@string/title_activity_lengths"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.example.fundamentalplasmaparameters.VelocitiesActivity"
-            android:label="@string/title_activity_velocities" >
+            android:label="@string/title_activity_velocities"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.example.fundamentalplasmaparameters.DimensionlessActivity"
-            android:label="@string/title_activity_dimensionless" >
+            android:label="@string/title_activity_dimensionless"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.example.fundamentalplasmaparameters.MiscellaneousActivity"
-            android:label="@string/title_activity_miscellaneous" >
+            android:label="@string/title_activity_miscellaneous"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.example.fundamentalplasmaparameters.AboutActivity"
-            android:label="@string/title_activity_about" >
+            android:label="@string/title_activity_about"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.example.fundamentalplasmaparameters.ElectronGyrofrequency"
-            android:label="@string/title_activity_electron_gyrofrequency" >
+            android:label="@string/title_activity_electron_gyrofrequency"
+            android:screenOrientation="portrait" >
         </activity>
     </application>
 

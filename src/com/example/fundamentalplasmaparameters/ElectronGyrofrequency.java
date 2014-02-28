@@ -15,7 +15,7 @@ public class ElectronGyrofrequency extends Activity {
 		setContentView(R.layout.electron_gyrofrequency);
 		
 		ActionBar actionBar = getActionBar();
-		actionBar.setDisplayHomeAsUpEnabled(true);
+		actionBar.setDisplayHomeAsUpEnabled(true);		
 	}
 
 	@Override
