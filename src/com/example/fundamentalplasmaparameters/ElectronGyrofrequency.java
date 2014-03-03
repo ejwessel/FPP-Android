@@ -80,9 +80,7 @@ public class ElectronGyrofrequency extends Activity {
         public void calculate(){
         	if(!(bInput.getText().toString().equals("") 
         			|| bExponent.getText().toString().equals("")
-        			|| bInput.getText().toString().contains(",")
-        			|| bExponent.getText().toString().contains(".")
-        			|| bExponent.getText().toString().contains(","))){
+        			|| bExponent.getText().toString().contains("."))){
 	    		double bValue = Double.parseDouble(bInput.getText().toString());
 	    		double bExponentValue = Double.parseDouble(bExponent.getText().toString());
 	        	double fValue = 2.80 * Math.pow(10,6) * bValue * Math.pow(10,bExponentValue);
