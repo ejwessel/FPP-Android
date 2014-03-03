@@ -34,21 +34,22 @@ public final class R {
         public static final int textlines_blue=0x7f020004;
     }
     public static final class id {
-        public static final int action_settings=0x7f09000e;
-        public static final int answer_f=0x7f090003;
-        public static final int answer_w=0x7f090004;
-        public static final int bExponent=0x7f09000c;
-        public static final int bInput=0x7f090009;
-        public static final int b_text=0x7f09000a;
-        public static final int e_text=0x7f09000b;
-        public static final int f_text=0x7f090006;
-        public static final int g_text=0x7f09000d;
-        public static final int imageView1=0x7f090001;
-        public static final int imageView2=0x7f090002;
+        public static final int ScrollView1=0x7f090001;
+        public static final int action_settings=0x7f09000f;
+        public static final int answer_f=0x7f090004;
+        public static final int answer_w=0x7f090005;
+        public static final int bExponent=0x7f09000d;
+        public static final int bInput=0x7f09000a;
+        public static final int b_text=0x7f09000b;
+        public static final int e_text=0x7f09000c;
+        public static final int f_text=0x7f090007;
+        public static final int g_text=0x7f09000e;
+        public static final int imageView1=0x7f090002;
+        public static final int imageView2=0x7f090003;
         public static final int listView1=0x7f090000;
-        public static final int units1_text=0x7f090007;
-        public static final int units2_text=0x7f090008;
-        public static final int w_text=0x7f090005;
+        public static final int units1_text=0x7f090008;
+        public static final int units2_text=0x7f090009;
+        public static final int w_text=0x7f090006;
     }
     public static final class layout {
         public static final int about=0x7f030000;
