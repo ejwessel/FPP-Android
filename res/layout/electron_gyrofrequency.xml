@@ -54,8 +54,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView1"
-        android:layout_centerHorizontal="true"
         android:layout_toRightOf="@+id/f_text"
+        android:layout_centerHorizontal="true"
         android:background="@drawable/textlines_blue"
         android:clickable="false"
         android:cursorVisible="false"
@@ -70,9 +70,9 @@
 
     <TextView
         android:id="@+id/units1_text"
-        android:layout_width="30dp"
+        android:layout_width="wrap_content"
         android:layout_height="30dp"
-        android:layout_above="@+id/imageView2"
+        android:layout_below="@+id/imageView1"
         android:layout_toRightOf="@+id/answer_f"
         android:gravity="center"
         android:text="Hz"
@@ -80,7 +80,7 @@
 
     <TextView
         android:id="@+id/units2_text"
-        android:layout_width="70dp"
+        android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:layout_alignBottom="@+id/answer_w"
         android:layout_toRightOf="@+id/answer_w"
@@ -104,7 +104,7 @@
         android:layout_width="40dp"
         android:layout_height="30dp"
         android:layout_alignLeft="@+id/imageView1"
-        android:layout_above="@+id/imageView2"
+        android:layout_below="@+id/imageView1"
         android:gravity="center"
         android:text="\u0192 = "
         android:textSize="20sp" />

@@ -12,5 +12,6 @@
     <string name="title_activity_miscellaneous">Miscellaneous</string>
     <string name="title_activity_about">About</string>
     <string name="title_activity_electron_gyrofrequency">Electron Gyrofrequency</string>
+    <string name="title_activity_ion_gyrofrequency">Ion Gyrofrequency</string>
 
 </resources>

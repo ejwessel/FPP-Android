@@ -57,8 +57,6 @@ public class ElectronGyrofrequency extends Activity {
 	}
 	
 	@Override
-  
-	
 	public boolean onOptionsItemSelected(MenuItem menuItem){       
         startActivity(new Intent(ElectronGyrofrequency.this, FrequenciesActivity.class));
         onBackPressed();
