@@ -73,6 +73,10 @@
             android:label="@string/title_activity_ion_plasma_frequency"
             android:screenOrientation="portrait" >
         </activity>
+        <activity
+            android:name="com.example.fundamentalplasmaparameters.ElectronTrappingRate"
+            android:label="@string/title_activity_electron_trapping_rate" >
+        </activity>
     </application>
 
 </manifest>
