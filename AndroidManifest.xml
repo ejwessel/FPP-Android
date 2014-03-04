@@ -83,6 +83,11 @@
             android:label="@string/title_activity_ion_trapping_rate"
             android:screenOrientation="portrait" >
         </activity>
+        <activity
+            android:name="com.example.fundamentalplasmaparameters.ElectronCollisionRate"
+            android:label="@string/title_activity_electron_collision_rate"
+            android:screenOrientation="portrait" >
+        </activity>
     </application>
 
 </manifest>

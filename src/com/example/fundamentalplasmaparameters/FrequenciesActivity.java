@@ -54,6 +54,9 @@ public class FrequenciesActivity extends Activity {
 				         case 5: startActivity(new Intent(FrequenciesActivity.this, IonTrappingRate.class));
  		 		 	 	 		 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
  		 		 	 	 		 break;
+				         case 6: startActivity(new Intent(FrequenciesActivity.this, ElectronCollisionRate.class));
+	 		 	 	 		 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
+	 		 	 	 		 break;
 			         }
 			         
 			     }
