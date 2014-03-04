@@ -1,17 +1,21 @@
 package com.example.fundamentalplasmaparameters;
 
-import android.os.Bundle;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
 
-public class ElectronPlasmaFrequency extends Activity {
+public class IonPlasmaFrequency extends Activity {
 
+	EditText zInput;
+	EditText zExponent;
+	EditText muInput;
+	EditText muExponent;
 	EditText nInput;
 	EditText nExponent;
 	EditText fAnswer;
@@ -20,7 +24,7 @@ public class ElectronPlasmaFrequency extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.electron_plasma_frequency);
+		setContentView(R.layout.ion_plasma_frequency);
 		
 		ActionBar actionBar = getActionBar();
 		actionBar.setDisplayHomeAsUpEnabled(true);	
@@ -31,6 +35,18 @@ public class ElectronPlasmaFrequency extends Activity {
 		nExponent = (EditText)findViewById(R.id.nExponent);
 		nExponent.addTextChangedListener(inputWatcher);
 		
+		zInput = (EditText)findViewById(R.id.zInput);
+		zInput.addTextChangedListener(inputWatcher);
+		
+		zExponent = (EditText)findViewById(R.id.zExponent);
+		zExponent.addTextChangedListener(inputWatcher);
+
+		muInput = (EditText)findViewById(R.id.muInput);
+		muInput.addTextChangedListener(inputWatcher);
+		
+		muExponent = (EditText)findViewById(R.id.muExponent);
+		muExponent.addTextChangedListener(inputWatcher);
+		
 		fAnswer = (EditText)findViewById(R.id.answer_f);
 		wAnswer = (EditText)findViewById(R.id.answer_w);
 	}
@@ -38,7 +54,7 @@ public class ElectronPlasmaFrequency extends Activity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.electron_plasma_frequency, menu);
+		getMenuInflater().inflate(R.menu.ion_plasma_frequency, menu);
 		return true;
 	}
 
@@ -50,7 +66,7 @@ public class ElectronPlasmaFrequency extends Activity {
 	
 	@Override
 	public boolean onOptionsItemSelected(MenuItem menuItem){       
-        startActivity(new Intent(ElectronPlasmaFrequency.this, FrequenciesActivity.class));
+        startActivity(new Intent(IonPlasmaFrequency.this, FrequenciesActivity.class));
         onBackPressed();
         return true;
     }
@@ -68,17 +84,35 @@ public class ElectronPlasmaFrequency extends Activity {
         }
         
         public void calculate(){
-        	if(!(nInput.getText().toString().equals("")
+        	if(!(zInput.getText().toString().equals("")
+    			|| zInput.getText().toString().equals("-")
+    			|| zExponent.getText().toString().equals("")
+    			|| zExponent.getText().toString().equals("-")
+    			|| zExponent.getText().toString().contains(".")
+    			
+    			|| muInput.getText().toString().equals("")
+    			|| muInput.getText().toString().equals("-")
+    			|| muExponent.getText().toString().equals("")
+    			|| muExponent.getText().toString().equals("-")
+    			|| muExponent.getText().toString().contains(".")
+    			
+    			|| nInput.getText().toString().equals("")
     			|| nInput.getText().toString().equals("-")
     			|| nExponent.getText().toString().equals("")
     			|| nExponent.getText().toString().equals("-")
     			|| nExponent.getText().toString().contains("."))){
-	    		double nValue = Double.parseDouble(nInput.getText().toString());
+        		double zValue = Double.parseDouble(nInput.getText().toString());
+	    		double zExponentValue = Double.parseDouble(nExponent.getText().toString());
+	    		zValue = zValue * Math.pow(10, zExponentValue);
+        		double muValue = Double.parseDouble(muInput.getText().toString());
+	    		double muExponentValue = Double.parseDouble(muExponent.getText().toString());
+	    		muValue = muValue * Math.pow(10, muExponentValue);
+        		double nValue = Double.parseDouble(nInput.getText().toString());
 	    		double nExponentValue = Double.parseDouble(nExponent.getText().toString());
 	    		nValue = nValue * Math.pow(10, nExponentValue);
 	    		
-	        	double fValue = 8.98 * Math.pow(10,3) * Math.pow(nValue, .5);
-	        	double wValue = 5.64 * Math.pow(10,4) * Math.pow(nValue, .5);
+	        	double fValue = 2.10 * Math.pow(10,2) * zValue * Math.pow(muValue, -.5) * Math.pow(nValue, .5);
+	        	double wValue = 1.32 * Math.pow(10,3) * zValue * Math.pow(muValue, -.5) * Math.pow(nValue, .5);
 	        	
 	        	fAnswer.setText(String.format("%.3E", fValue));
 	        	wAnswer.setText(String.format("%.3E", wValue));

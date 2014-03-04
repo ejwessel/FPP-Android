@@ -1,0 +1,244 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:layout_gravity="center_horizontal">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp">
+        
+        <!-- Every Linear Layout here is a Row -->
+        
+        <LinearLayout 
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+ 	        android:layout_height="wrap_content">
+ 	        
+            <ImageView
+		        android:id="@+id/imageView1"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/ion_plas_f"/>          
+        </LinearLayout>
+  
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="\u0192 = "
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/answer_f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textlines_blue"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center_horizontal"
+                android:inputType="numberDecimal"
+                android:padding="5dp"
+                android:text="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=" Hz"
+                android:textSize="20sp" />
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+ 	        android:layout_height="wrap_content">
+ 	        
+            <ImageView
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/ion_plas_w"/>          
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content">
+            
+            <TextView
+		        android:layout_width="30dp"
+		        android:layout_height="wrap_content"
+		        android:gravity="center"
+		        android:text="\u03C9 = "
+		        android:textSize="20sp" />
+            
+            <EditText
+		        android:id="@+id/answer_w"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/textlines_blue"
+		        android:clickable="false"
+		        android:cursorVisible="false"
+		        android:ems="10"
+		        android:focusable="false"
+		        android:focusableInTouchMode="false"
+		        android:gravity="center_horizontal"
+		        android:inputType="numberDecimal"
+		        android:padding="5dp"
+		        android:text="0" />
+            
+            <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:gravity="center"
+		        android:text=" rad/sec"
+		        android:textSize="20sp" />
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp">
+            
+            <TextView
+		        android:layout_width="30dp"
+		        android:layout_height="wrap_content"
+		        android:gravity="center"
+		        android:text="Z = "
+		        android:textSize="20sp" />
+            
+            <EditText
+		        android:id="@+id/zInput"
+		        android:layout_width="120dp"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/textlines_black"
+		        android:gravity="center"
+		        android:ems="10"
+		        android:inputType="numberDecimal|numberSigned"
+		        android:padding="5dp" >
+		        <requestFocus />
+		    </EditText>
+		    
+            <TextView
+		        android:layout_width="30dp"
+		        android:layout_height="wrap_content"
+		        android:gravity="center"
+		        android:text="e"
+		        android:textSize="20sp" />
+            
+            <EditText
+		        android:id="@+id/zExponent"
+		        android:layout_width="60dp"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/textlines_black"
+		        android:gravity="center"
+		        android:ems="10"
+		        android:inputType="numberDecimal|numberSigned"
+		        android:padding="5dp"
+		        android:text="0" >
+		    </EditText>
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp">
+            
+            <TextView
+		        android:layout_width="30dp"
+		        android:layout_height="wrap_content"
+		        android:gravity="center"
+		        android:text="\u03BC = "
+		        android:textSize="20sp" />
+            
+            <EditText
+		        android:id="@+id/muInput"
+		        android:layout_width="120dp"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/textlines_black"
+		        android:gravity="center"
+		        android:ems="10"
+		        android:inputType="numberDecimal|numberSigned"
+		        android:padding="5dp" >
+		    </EditText>
+		    
+            <TextView
+		        android:layout_width="30dp"
+		        android:layout_height="wrap_content"
+		        android:gravity="center"
+		        android:text="e"
+		        android:textSize="20sp" />
+            
+            <EditText
+		        android:id="@+id/muExponent"
+		        android:layout_width="60dp"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/textlines_black"
+		        android:gravity="center"
+		        android:ems="10"
+		        android:inputType="numberDecimal|numberSigned"
+		        android:padding="5dp"
+		        android:text="0" >
+		    </EditText>
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp">
+            
+            <TextView
+		        android:layout_width="30dp"
+		        android:layout_height="wrap_content"
+		        android:gravity="center"
+		        android:text="n = "
+		        android:textSize="20sp" />
+            
+            <EditText
+		        android:id="@+id/nInput"
+		        android:layout_width="120dp"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/textlines_black"
+		        android:gravity="center"
+		        android:ems="10"
+		        android:inputType="numberDecimal|numberSigned"
+		        android:padding="5dp" >
+		    </EditText>
+		    
+            <TextView
+		        android:layout_width="30dp"
+		        android:layout_height="wrap_content"
+		        android:gravity="center"
+		        android:text="e"
+		        android:textSize="20sp" />
+            
+            <EditText
+		        android:id="@+id/nExponent"
+		        android:layout_width="60dp"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/textlines_black"
+		        android:gravity="center"
+		        android:ems="10"
+		        android:inputType="numberDecimal|numberSigned"
+		        android:padding="5dp"
+		        android:text="0" >
+		    </EditText>
+        </LinearLayout>
+        
+    </LinearLayout>
+</ScrollView>

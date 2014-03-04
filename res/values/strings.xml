@@ -14,5 +14,6 @@
     <string name="title_activity_electron_gyrofrequency">Electron Gyrofrequency</string>
     <string name="title_activity_ion_gyrofrequency">Ion Gyrofrequency</string>
     <string name="title_activity_electron_plasma_frequency">Electron Plasma Frequency</string>
+    <string name="title_activity_ion_plasma_frequency">Ion Plasma Frequency</string>
 
 </resources>
