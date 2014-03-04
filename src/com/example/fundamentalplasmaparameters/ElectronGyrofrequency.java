@@ -16,11 +16,7 @@ public class ElectronGyrofrequency extends Activity {
 	EditText bInput;
 	EditText bExponent;
 	EditText fAnswer;
-	EditText wAnswer;
-
-	double fValue;
-	double wValue;
-	
+	EditText wAnswer;	
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -37,10 +33,7 @@ public class ElectronGyrofrequency extends Activity {
 		bExponent.addTextChangedListener(inputWatcher);
 
 		fAnswer = (EditText)findViewById(R.id.answer_f);
-		wAnswer = (EditText)findViewById(R.id.answer_w);
-		
-		fValue = 0;
-		wValue = 0;
+		wAnswer = (EditText)findViewById(R.id.answer_w);		
 	}
 
 	@Override

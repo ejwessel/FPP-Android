@@ -1,14 +1,26 @@
 package com.example.fundamentalplasmaparameters;
 
-import android.os.Bundle;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.EditText;
 
 public class IonGyrofrequency extends Activity {
 
+	EditText zInput;
+	EditText muInput;
+	EditText bInput;
+	EditText zExponent;
+	EditText muExponent;
+	EditText bExponent;
+	EditText fAnswer;
+	EditText wAnswer;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -16,6 +28,27 @@ public class IonGyrofrequency extends Activity {
 		
 		ActionBar actionBar = getActionBar();
 		actionBar.setDisplayHomeAsUpEnabled(true);	
+		
+		zInput = (EditText)findViewById(R.id.zInput);
+		zInput.addTextChangedListener(inputWatcher);
+		
+		muInput = (EditText)findViewById(R.id.muInput);
+		muInput.addTextChangedListener(inputWatcher);
+		
+		bInput = (EditText)findViewById(R.id.bInput);
+		bInput.addTextChangedListener(inputWatcher);
+		
+		zExponent = (EditText)findViewById(R.id.zExponent);
+		zExponent.addTextChangedListener(inputWatcher);
+		
+		muExponent = (EditText)findViewById(R.id.muExponent);
+		muExponent.addTextChangedListener(inputWatcher);
+		
+		bExponent = (EditText)findViewById(R.id.bExponent);
+		bExponent.addTextChangedListener(inputWatcher);
+		
+		fAnswer = (EditText)findViewById(R.id.answer_f);
+		wAnswer = (EditText)findViewById(R.id.answer_w);
 	}
 
 	@Override
@@ -37,4 +70,49 @@ public class IonGyrofrequency extends Activity {
         onBackPressed();
         return true;
     }
+
+	private final TextWatcher inputWatcher = new TextWatcher() {
+        
+        public void beforeTextChanged(CharSequence s, int start, int count, int after){
+        }
+
+        public void onTextChanged(CharSequence s, int start, int before, int count){
+        }
+
+        public void afterTextChanged(Editable s){
+        	calculate();
+        }
+        
+        public void calculate(){
+        	if(!(bInput.getText().toString().equals("") 
+    			|| bExponent.getText().toString().equals("")
+    			|| bExponent.getText().toString().contains(".")
+    			|| zInput.getText().toString().equals("")
+    			|| zExponent.getText().toString().equals("")
+    			|| zExponent.getText().toString().contains(".")
+    			|| muInput.getText().toString().equals("")
+    			|| muExponent.getText().toString().equals("")
+    			|| muExponent.getText().toString().contains("."))){
+	    		double bValue = Double.parseDouble(bInput.getText().toString());
+	    		double bExponentValue = Double.parseDouble(bExponent.getText().toString());
+	    		bValue = Math.pow(bValue, bExponentValue);
+	    		double zValue = Double.parseDouble(zInput.getText().toString());
+	    		double zExponentValue = Double.parseDouble(zExponent.getText().toString());
+	    		zValue = Math.pow(zValue, zExponentValue);
+	    		double muValue = Double.parseDouble(muInput.getText().toString());
+	    		double muExponentValue = Double.parseDouble(muExponent.getText().toString());
+	    		muValue = Math.pow(muValue, muExponentValue);
+	    		
+	        	double fValue = 1.52 * Math.pow(10,3) * zValue * Math.pow(muValue, -1) * bValue;
+	        	double wValue = 9.58 * Math.pow(10,3) * zValue * Math.pow(muValue, -1) * bValue;
+	        	
+	        	fAnswer.setText(String.format("%.3E", fValue));
+	        	wAnswer.setText(String.format("%.3E", wValue));
+	    	}
+	    	else{
+	    		fAnswer.setText("Invalid Input");
+	    		wAnswer.setText("Invalid Input");
+	    	}
+        }
+	};
 }
