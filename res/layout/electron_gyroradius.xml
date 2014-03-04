@@ -22,7 +22,7 @@
 		        android:id="@+id/imageView1"
 		        android:layout_width="match_parent"
 		        android:layout_height="wrap_content"
-		        android:src="@drawable/electron_broglie_length"/>          
+		        android:src="@drawable/electron_gyroradius"/>          
         </LinearLayout>
   
         <LinearLayout
@@ -34,11 +34,11 @@
                 android:layout_width="30dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="\u019B = "
+                android:text="r = "
                 android:textSize="20sp" />
 
             <EditText
-                android:id="@+id/answer_lambda"
+                android:id="@+id/answer_r"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/textlines_blue"
@@ -82,6 +82,7 @@
 		        android:ems="10"
 		        android:inputType="numberDecimal|numberSigned"
 		        android:padding="5dp" >
+		        <requestFocus />
 		    </EditText>
 		    
             <TextView
@@ -93,6 +94,51 @@
             
             <EditText
 		        android:id="@+id/tExponent"
+		        android:layout_width="60dp"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/textlines_black"
+		        android:gravity="center"
+		        android:ems="10"
+		        android:inputType="numberDecimal|numberSigned"
+		        android:padding="5dp"
+		        android:text="0" >
+		    </EditText>
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp">
+            
+            <TextView
+		        android:layout_width="30dp"
+		        android:layout_height="wrap_content"
+		        android:gravity="center"
+		        android:text="B = "
+		        android:textSize="20sp" />
+            
+            <EditText
+		        android:id="@+id/bInput"
+		        android:layout_width="120dp"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/textlines_black"
+		        android:gravity="center"
+		        android:ems="10"
+		        android:inputType="numberDecimal|numberSigned"
+		        android:padding="5dp" >
+		        <requestFocus />
+		    </EditText>
+		    
+            <TextView
+		        android:layout_width="30dp"
+		        android:layout_height="wrap_content"
+		        android:gravity="center"
+		        android:text="e"
+		        android:textSize="20sp" />
+            
+            <EditText
+		        android:id="@+id/bExponent"
 		        android:layout_width="60dp"
 		        android:layout_height="wrap_content"
 		        android:background="@drawable/textlines_black"

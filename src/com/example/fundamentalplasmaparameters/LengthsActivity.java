@@ -2,6 +2,7 @@ package com.example.fundamentalplasmaparameters;
 
 import java.util.ArrayList;
 
+
 import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
@@ -31,19 +32,25 @@ public class LengthsActivity extends Activity {
 		ArrayAdapter<String> adapter =  new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, nameList);
 		optionList.setAdapter(adapter); //populates list
 		optionList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-			     public void onItemClick(AdapterView<?> parentAdapter, View view, int position, long id) {
-			         TextView clickedView = (TextView) view;
-			         String textClicked = clickedView.getText().toString();
-			         
-			         switch(position){
+		     public void onItemClick(AdapterView<?> parentAdapter, View view, int position, long id) {
+		         TextView clickedView = (TextView) view;
+		         String textClicked = clickedView.getText().toString();
+		         
+		         switch(position){
 			         case 0: startActivity(new Intent(LengthsActivity.this, ElectronDeBroglieLength.class));
 				         	 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
 				         	 break;
 			         case 1: startActivity(new Intent(LengthsActivity.this, ClassicalDistMinApp.class));
 		         	 		 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
 		         	 		 break;
-			         }
-			     }
+			         case 2: startActivity(new Intent(LengthsActivity.this, ElectronGyroradius.class));
+         	 		 		 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
+         	 		 		 break;
+			         case 3: startActivity(new Intent(LengthsActivity.this, IonGyroradius.class));
+ 	 		 		 		 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
+ 	 		 		 		 break;
+		         }
+		     }
 		});
 	}
 

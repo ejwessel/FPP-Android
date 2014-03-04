@@ -16,16 +16,18 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
 
-public class ClassicalDistMinApp extends Activity {
+public class ElectronGyroradius extends Activity {
 
 	EditText tInput;
 	EditText tExponent;
-	EditText answer;
+	EditText bInput;
+	EditText bExponent;
+	EditText rAnswer;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.classical_dist_min_app);
+		setContentView(R.layout.electron_gyroradius);
 		
 		ActionBar actionBar = getActionBar();
 		actionBar.setDisplayHomeAsUpEnabled(true);	
@@ -36,17 +38,22 @@ public class ClassicalDistMinApp extends Activity {
 		tExponent = (EditText)findViewById(R.id.tExponent);
 		tExponent.addTextChangedListener(inputWatcher);
 		
-		answer = (EditText)findViewById(R.id.answer);
+		bInput = (EditText)findViewById(R.id.bInput);
+		bInput.addTextChangedListener(inputWatcher);
+		
+		bExponent = (EditText)findViewById(R.id.bExponent);
+		bExponent.addTextChangedListener(inputWatcher);
+		
+		rAnswer = (EditText)findViewById(R.id.answer_r);
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.classical_dist_min_app, menu);
+		getMenuInflater().inflate(R.menu.electron_gyroradius, menu);
 		return true;
 	}
 
-	@Override
 	public void onBackPressed() {
 	    super.onBackPressed();
 	    overridePendingTransition(R.anim.left_slide_in, R.anim.right_slide_out);
@@ -54,7 +61,7 @@ public class ClassicalDistMinApp extends Activity {
 	
 	@Override
 	public boolean onOptionsItemSelected(MenuItem menuItem){       
-        startActivity(new Intent(ClassicalDistMinApp.this, LengthsActivity.class));
+        startActivity(new Intent(ElectronGyroradius.this, LengthsActivity.class));
         onBackPressed();
         return true;
     }
@@ -76,16 +83,25 @@ public class ClassicalDistMinApp extends Activity {
     			|| tInput.getText().toString().equals("-")
     			|| tExponent.getText().toString().equals("")
     			|| tExponent.getText().toString().equals("-")
-    			|| tExponent.getText().toString().contains("."))){
-	    		double tValue = Double.parseDouble(tInput.getText().toString());
+    			|| tExponent.getText().toString().contains(".")
+    			
+    			|| bInput.getText().toString().equals("")
+    			|| bInput.getText().toString().equals("-")
+    			|| bExponent.getText().toString().equals("")
+    			|| bExponent.getText().toString().equals("-")
+    			|| bExponent.getText().toString().contains("."))){
+        		double tValue = Double.parseDouble(tInput.getText().toString());
 	    		double tExponentValue = Double.parseDouble(tExponent.getText().toString());
 	    		tValue = tValue * Math.pow(10, tExponentValue);
-	    		
-	        	double vValue = 1.44 * Math.pow(10,-7) * Math.pow(tValue, -1);	
-	        	answer.setText(String.format("%.3E", vValue));
+	    		double bValue = Double.parseDouble(bInput.getText().toString());
+	    		double bExponentValue = Double.parseDouble(bExponent.getText().toString());
+	    		bValue = bValue * Math.pow(10, bExponentValue);
+        		
+	        	double lambaValue = 2.38 * Math.pow(tValue, .5) * Math.pow(bValue, -1);   	
+	        	rAnswer.setText(String.format("%.3E", lambaValue));
 	    	}
 	    	else{
-	    		answer.setText("Invalid Input");
+	    		rAnswer.setText("Invalid Input");
 	    	}
         }
 	};

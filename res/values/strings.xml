@@ -21,5 +21,7 @@
     <string name="title_activity_ion_collision_rate">Ion Collision Rate</string>
     <string name="title_activity_electron_de_broglie_length">Electron deBroglie Length</string>
     <string name="title_activity_classical_dist_min_app">Classical Dist. Min. App.</string>
+    <string name="title_activity_electron_gyroradius">Electron Gyroradius</string>
+    <string name="title_activity_ion_gyroradius">Ion Gyroradius</string>
 
 </resources>

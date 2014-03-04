@@ -1,5 +1,11 @@
 package com.example.fundamentalplasmaparameters;
 
+import com.example.fundamentalplasmaparameters.R;
+import com.example.fundamentalplasmaparameters.R.anim;
+import com.example.fundamentalplasmaparameters.R.id;
+import com.example.fundamentalplasmaparameters.R.layout;
+import com.example.fundamentalplasmaparameters.R.menu;
+
 import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;

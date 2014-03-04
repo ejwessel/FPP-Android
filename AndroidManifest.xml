@@ -100,7 +100,18 @@
         </activity>
         <activity
             android:name="com.example.fundamentalplasmaparameters.ClassicalDistMinApp"
-            android:label="@string/title_activity_classical_dist_min_app" >
+            android:label="@string/title_activity_classical_dist_min_app"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.fundamentalplasmaparameters.ElectronGyroradius"
+            android:label="@string/title_activity_electron_gyroradius"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.fundamentalplasmaparameters.IonGyroradius"
+            android:label="@string/title_activity_ion_gyroradius"
+            android:screenOrientation="portrait" >
         </activity>
     </application>
 
