@@ -10,55 +10,60 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
 
-public class IonPlasmaFrequency extends Activity {
+public class IonTrappingRate extends Activity {
 
 	EditText zInput;
 	EditText zExponent;
+	EditText kInput;
+	EditText kExponent;
+	EditText eInput;
+	EditText eExponent;
 	EditText muInput;
 	EditText muExponent;
-	EditText nInput;
-	EditText nExponent;
-	EditText fAnswer;
-	EditText wAnswer;
+	EditText vAnswer;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.ion_plasma_frequency);
-		
+		setContentView(R.layout.ion_trapping_rate);
+
 		ActionBar actionBar = getActionBar();
 		actionBar.setDisplayHomeAsUpEnabled(true);	
-		
-		nInput = (EditText)findViewById(R.id.nInput);
-		nInput.addTextChangedListener(inputWatcher);
-		
-		nExponent = (EditText)findViewById(R.id.nExponent);
-		nExponent.addTextChangedListener(inputWatcher);
 		
 		zInput = (EditText)findViewById(R.id.zInput);
 		zInput.addTextChangedListener(inputWatcher);
 		
 		zExponent = (EditText)findViewById(R.id.zExponent);
 		zExponent.addTextChangedListener(inputWatcher);
-
+		
+		kInput = (EditText)findViewById(R.id.kInput);
+		kInput.addTextChangedListener(inputWatcher);
+		
+		kExponent = (EditText)findViewById(R.id.kExponent);
+		kExponent.addTextChangedListener(inputWatcher);
+		
+		eInput = (EditText)findViewById(R.id.eInput);
+		eInput.addTextChangedListener(inputWatcher);
+		
+		eExponent = (EditText)findViewById(R.id.eExponent);
+		eExponent.addTextChangedListener(inputWatcher);
+		
 		muInput = (EditText)findViewById(R.id.muInput);
 		muInput.addTextChangedListener(inputWatcher);
 		
 		muExponent = (EditText)findViewById(R.id.muExponent);
 		muExponent.addTextChangedListener(inputWatcher);
 		
-		fAnswer = (EditText)findViewById(R.id.answer_f);
-		wAnswer = (EditText)findViewById(R.id.answer_w);
+		vAnswer = (EditText)findViewById(R.id.answer_v);
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.ion_plasma_frequency, menu);
+		getMenuInflater().inflate(R.menu.ion_trapping_rate, menu);
 		return true;
 	}
 
-	@Override
 	public void onBackPressed() {
 	    super.onBackPressed();
 	    overridePendingTransition(R.anim.left_slide_in, R.anim.right_slide_out);
@@ -66,7 +71,7 @@ public class IonPlasmaFrequency extends Activity {
 	
 	@Override
 	public boolean onOptionsItemSelected(MenuItem menuItem){       
-        startActivity(new Intent(IonPlasmaFrequency.this, FrequenciesActivity.class));
+        startActivity(new Intent(IonTrappingRate.this, FrequenciesActivity.class));
         onBackPressed();
         return true;
     }
@@ -96,30 +101,35 @@ public class IonPlasmaFrequency extends Activity {
     			|| muExponent.getText().toString().equals("-")
     			|| muExponent.getText().toString().contains(".")
     			
-    			|| nInput.getText().toString().equals("")
-    			|| nInput.getText().toString().equals("-")
-    			|| nExponent.getText().toString().equals("")
-    			|| nExponent.getText().toString().equals("-")
-    			|| nExponent.getText().toString().contains("."))){
+    			|| kInput.getText().toString().equals("")
+    			|| kInput.getText().toString().equals("-")
+    			|| kExponent.getText().toString().equals("")
+    			|| kExponent.getText().toString().equals("-")
+    			|| kExponent.getText().toString().contains(".")
+    			
+    			|| eInput.getText().toString().equals("")
+    			|| eInput.getText().toString().equals("-")
+    			|| eExponent.getText().toString().equals("")
+    			|| eExponent.getText().toString().equals("-")
+    			|| eExponent.getText().toString().contains("."))){
         		double zValue = Double.parseDouble(zInput.getText().toString());
 	    		double zExponentValue = Double.parseDouble(zExponent.getText().toString());
 	    		zValue = zValue * Math.pow(10, zExponentValue);
         		double muValue = Double.parseDouble(muInput.getText().toString());
 	    		double muExponentValue = Double.parseDouble(muExponent.getText().toString());
 	    		muValue = muValue * Math.pow(10, muExponentValue);
-        		double nValue = Double.parseDouble(nInput.getText().toString());
-	    		double nExponentValue = Double.parseDouble(nExponent.getText().toString());
-	    		nValue = nValue * Math.pow(10, nExponentValue);
+        		double kValue = Double.parseDouble(kInput.getText().toString());
+	    		double kExponentValue = Double.parseDouble(kExponent.getText().toString());
+	    		kValue = kValue * Math.pow(10, kExponentValue);
+	    		double eValue = Double.parseDouble(eInput.getText().toString());
+	    		double eExponentValue = Double.parseDouble(eExponent.getText().toString());
+	    		eValue = eValue * Math.pow(10, eExponentValue);
 	    		
-	        	double fValue = 2.10 * Math.pow(10,2) * zValue * Math.pow(muValue, -.5) * Math.pow(nValue, .5);
-	        	double wValue = 1.32 * Math.pow(10,3) * zValue * Math.pow(muValue, -.5) * Math.pow(nValue, .5);
-	        	
-	        	fAnswer.setText(String.format("%.3E", fValue));
-	        	wAnswer.setText(String.format("%.3E", wValue));
+	        	double vValue = 1.69 * Math.pow(10,7) * Math.pow(zValue, .5) * Math.pow(kValue, .5) * Math.pow(eValue, .5) * Math.pow(muValue, -.5);
+	        	vAnswer.setText(String.format("%.3E", vValue));
 	    	}
 	    	else{
-	    		fAnswer.setText("Invalid Input");
-	    		wAnswer.setText("Invalid Input");
+	    		vAnswer.setText("Invalid Input");
 	    	}
         }
 	};

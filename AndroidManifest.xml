@@ -75,7 +75,13 @@
         </activity>
         <activity
             android:name="com.example.fundamentalplasmaparameters.ElectronTrappingRate"
-            android:label="@string/title_activity_electron_trapping_rate" >
+            android:label="@string/title_activity_electron_trapping_rate"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.fundamentalplasmaparameters.IonTrappingRate"
+            android:label="@string/title_activity_ion_trapping_rate"
+            android:screenOrientation="portrait" >
         </activity>
     </application>
 
