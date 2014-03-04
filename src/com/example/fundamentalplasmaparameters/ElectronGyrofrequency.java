@@ -69,13 +69,16 @@ public class ElectronGyrofrequency extends Activity {
         }
         
         public void calculate(){
-        	if(!(bInput.getText().toString().equals("") 
-        			|| bExponent.getText().toString().equals("")
-        			|| bExponent.getText().toString().contains("."))){
+        	if(!(bInput.getText().toString().equals("")
+    			|| bInput.getText().toString().equals("-")
+    			|| bExponent.getText().toString().equals("")
+    			|| bExponent.getText().toString().contains(".")
+    			|| bExponent.getText().toString().equals("-"))){
 	    		double bValue = Double.parseDouble(bInput.getText().toString());
 	    		double bExponentValue = Double.parseDouble(bExponent.getText().toString());
-	        	double fValue = 2.80 * Math.pow(10,6) * bValue * Math.pow(10,bExponentValue);
-	        	double wValue = 1.76 * Math.pow(10,7) * bValue * Math.pow(10,bExponentValue);
+	    		bValue = bValue * Math.pow(10, bExponentValue);
+	        	double fValue = 2.80 * Math.pow(10,6) * bValue;
+	        	double wValue = 1.76 * Math.pow(10,7) * bValue;
 	        	
 	        	fAnswer.setText(String.format("%.3E", fValue));
 	        	wAnswer.setText(String.format("%.3E", wValue));

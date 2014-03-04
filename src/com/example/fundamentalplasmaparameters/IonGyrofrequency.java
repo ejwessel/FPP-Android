@@ -84,24 +84,32 @@ public class IonGyrofrequency extends Activity {
         }
         
         public void calculate(){
-        	if(!(bInput.getText().toString().equals("") 
+        	if(!(bInput.getText().toString().equals("")
+        		|| bInput.getText().toString().equals("-")
     			|| bExponent.getText().toString().equals("")
     			|| bExponent.getText().toString().contains(".")
+    			|| bExponent.getText().toString().equals("-")
+    			
     			|| zInput.getText().toString().equals("")
+    			|| zInput.getText().toString().equals("-")
     			|| zExponent.getText().toString().equals("")
     			|| zExponent.getText().toString().contains(".")
+    			|| zExponent.getText().toString().equals("-")
+    			
     			|| muInput.getText().toString().equals("")
+    			|| muInput.getText().toString().equals("-")
     			|| muExponent.getText().toString().equals("")
-    			|| muExponent.getText().toString().contains("."))){
+    			|| muExponent.getText().toString().contains(".")
+    			|| muExponent.getText().toString().equals("-"))){
 	    		double bValue = Double.parseDouble(bInput.getText().toString());
 	    		double bExponentValue = Double.parseDouble(bExponent.getText().toString());
-	    		bValue = Math.pow(bValue, bExponentValue);
+	    		bValue = bValue * Math.pow(10, bExponentValue);
 	    		double zValue = Double.parseDouble(zInput.getText().toString());
 	    		double zExponentValue = Double.parseDouble(zExponent.getText().toString());
-	    		zValue = Math.pow(zValue, zExponentValue);
+	    		zValue = zValue * Math.pow(10, zExponentValue);
 	    		double muValue = Double.parseDouble(muInput.getText().toString());
 	    		double muExponentValue = Double.parseDouble(muExponent.getText().toString());
-	    		muValue = Math.pow(muValue, muExponentValue);
+	    		muValue = muValue * Math.pow(10, muExponentValue);
 	    		
 	        	double fValue = 1.52 * Math.pow(10,3) * zValue * Math.pow(muValue, -1) * bValue;
 	        	double wValue = 9.58 * Math.pow(10,3) * zValue * Math.pow(muValue, -1) * bValue;

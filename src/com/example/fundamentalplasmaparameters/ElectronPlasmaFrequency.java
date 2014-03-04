@@ -28,7 +28,7 @@ public class ElectronPlasmaFrequency extends Activity {
 		nInput = (EditText)findViewById(R.id.nInput);
 		nInput.addTextChangedListener(inputWatcher);
 		
-		nExponent = (EditText)findViewById(R.id.nInput);
+		nExponent = (EditText)findViewById(R.id.nExponent);
 		nExponent.addTextChangedListener(inputWatcher);
 		
 		fAnswer = (EditText)findViewById(R.id.answer_f);
@@ -68,12 +68,14 @@ public class ElectronPlasmaFrequency extends Activity {
         }
         
         public void calculate(){
-        	if(!(nInput.getText().toString().equals("") 
+        	if(!(nInput.getText().toString().equals("")
+    			|| nInput.getText().toString().equals("")
     			|| nExponent.getText().toString().equals("")
+    			|| nExponent.getText().toString().equals("-")
     			|| nExponent.getText().toString().contains("."))){
 	    		double nValue = Double.parseDouble(nInput.getText().toString());
 	    		double nExponentValue = Double.parseDouble(nExponent.getText().toString());
-	    		nValue = Math.pow(nValue, nExponentValue);
+	    		nValue = nValue * Math.pow(10, nExponentValue);
 	    		
 	        	double fValue = 8.98 * Math.pow(10,3) * Math.pow(nValue, .5);
 	        	double wValue = 5.64 * Math.pow(10,4) * Math.pow(nValue, .5);

@@ -127,7 +127,7 @@
 		        android:background="@drawable/textlines_black"
 		        android:gravity="center"
 		        android:ems="10"
-		        android:inputType="numberDecimal"
+		        android:inputType="numberDecimal|numberSigned"
 		        android:padding="5dp" >
 		        <requestFocus />
 		    </EditText>
@@ -146,7 +146,7 @@
 		        android:background="@drawable/textlines_black"
 		        android:gravity="center"
 		        android:ems="10"
-		        android:inputType="numberDecimal"
+		        android:inputType="numberDecimal|numberSigned"
 		        android:padding="5dp"
 		        android:text="0" >
 		    </EditText>
@@ -172,7 +172,7 @@
 		        android:background="@drawable/textlines_black"
 		        android:gravity="center"
 		        android:ems="10"
-		        android:inputType="numberDecimal"
+		        android:inputType="numberDecimal|numberSigned"
 		        android:padding="5dp" >
 		    </EditText>
 		    
@@ -190,7 +190,7 @@
 		        android:background="@drawable/textlines_black"
 		        android:gravity="center"
 		        android:ems="10"
-		        android:inputType="numberDecimal"
+		        android:inputType="numberDecimal|numberSigned"
 		        android:padding="5dp"
 		        android:text="0"  >
 		    </EditText>
@@ -216,7 +216,7 @@
 		        android:background="@drawable/textlines_black"
 		        android:gravity="center"
 		        android:ems="10"
-		        android:inputType="numberDecimal"
+		        android:inputType="numberDecimal|numberSigned"
 		        android:padding="5dp" >
 		    </EditText>
 		    
@@ -234,7 +234,7 @@
 		        android:background="@drawable/textlines_black"
 		        android:gravity="center"
 		        android:ems="10"
-		        android:inputType="numberDecimal"
+		        android:inputType="numberDecimal|numberSigned"
 		        android:padding="5dp"
 		        android:text="0" >
 		    </EditText>
