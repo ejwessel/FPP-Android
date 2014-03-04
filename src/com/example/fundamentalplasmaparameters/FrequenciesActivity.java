@@ -55,8 +55,11 @@ public class FrequenciesActivity extends Activity {
  		 		 	 	 		 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
  		 		 	 	 		 break;
 				         case 6: startActivity(new Intent(FrequenciesActivity.this, ElectronCollisionRate.class));
-	 		 	 	 		 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
-	 		 	 	 		 break;
+	 		 	 	 		 	 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
+	 		 	 	 		 	 break;
+				         case 7: startActivity(new Intent(FrequenciesActivity.this, IonCollisionRate.class));
+		 	 	 		 	 	 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
+		 	 	 		 	 	 break;
 			         }
 			         
 			     }

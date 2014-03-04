@@ -18,5 +18,6 @@
     <string name="title_activity_electron_trapping_rate">Electron Trapping Rate</string>
     <string name="title_activity_ion_trapping_rate">Ion Trapping Rate</string>
     <string name="title_activity_electron_collision_rate">Electron Collision Rate</string>
+    <string name="title_activity_ion_collision_rate">Ion Collision Rate</string>
 
 </resources>
