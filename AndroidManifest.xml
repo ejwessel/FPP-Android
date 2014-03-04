@@ -93,6 +93,15 @@
             android:label="@string/title_activity_ion_collision_rate"
             android:screenOrientation="portrait" >
         </activity>
+        <activity
+            android:name="com.example.fundamentalplasmaparameters.ElectronDeBroglieLength"
+            android:label="@string/title_activity_electron_de_broglie_length"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.fundamentalplasmaparameters.ClassicalDistMinApp"
+            android:label="@string/title_activity_classical_dist_min_app" >
+        </activity>
     </application>
 
 </manifest>

@@ -34,6 +34,15 @@ public class LengthsActivity extends Activity {
 			     public void onItemClick(AdapterView<?> parentAdapter, View view, int position, long id) {
 			         TextView clickedView = (TextView) view;
 			         String textClicked = clickedView.getText().toString();
+			         
+			         switch(position){
+			         case 0: startActivity(new Intent(LengthsActivity.this, ElectronDeBroglieLength.class));
+				         	 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
+				         	 break;
+			         case 1: startActivity(new Intent(LengthsActivity.this, ClassicalDistMinApp.class));
+		         	 		 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
+		         	 		 break;
+			         }
 			     }
 		});
 	}

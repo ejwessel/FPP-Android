@@ -19,5 +19,7 @@
     <string name="title_activity_ion_trapping_rate">Ion Trapping Rate</string>
     <string name="title_activity_electron_collision_rate">Electron Collision Rate</string>
     <string name="title_activity_ion_collision_rate">Ion Collision Rate</string>
+    <string name="title_activity_electron_de_broglie_length">Electron deBroglie Length</string>
+    <string name="title_activity_classical_dist_min_app">Classical Dist. Min. App.</string>
 
 </resources>
