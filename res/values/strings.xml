@@ -13,5 +13,6 @@
     <string name="title_activity_about">About</string>
     <string name="title_activity_electron_gyrofrequency">Electron Gyrofrequency</string>
     <string name="title_activity_ion_gyrofrequency">Ion Gyrofrequency</string>
+    <string name="title_activity_electron_plasma_frequency">Electron Plasma Frequency</string>
 
 </resources>

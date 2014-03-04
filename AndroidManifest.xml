@@ -63,6 +63,11 @@
             android:label="@string/title_activity_ion_gyrofrequency"
             android:screenOrientation="portrait" >
         </activity>
+        <activity
+            android:name="com.example.fundamentalplasmaparameters.ElectronPlasmaFrequency"
+            android:label="@string/title_activity_electron_plasma_frequency"
+            android:screenOrientation="portrait" >
+        </activity>
     </application>
 
 </manifest>

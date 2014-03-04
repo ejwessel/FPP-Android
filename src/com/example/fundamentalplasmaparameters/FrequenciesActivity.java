@@ -42,6 +42,9 @@ public class FrequenciesActivity extends Activity {
 				         case 1: startActivity(new Intent(FrequenciesActivity.this, IonGyrofrequency.class));
 				         		 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
 				         		 break;
+				         case 2: startActivity(new Intent(FrequenciesActivity.this, ElectronPlasmaFrequency.class));
+				         		 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
+				         		 break; 
 			         }
 			         
 			     }
