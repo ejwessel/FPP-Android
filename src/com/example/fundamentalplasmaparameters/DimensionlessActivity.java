@@ -45,9 +45,9 @@ public class DimensionlessActivity extends Activity {
 			         case 2: startActivity(new Intent(DimensionlessActivity.this, AlfvenVelocityLight.class));
 			         		 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
 			         		 break;
-//			         case 3: startActivity(new Intent(DimensionlessActivity.this, ElectronPlasmaGyroRatio.class));
-//	         		 		 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
-//	         		 		 break;
+			         case 3: startActivity(new Intent(DimensionlessActivity.this, ElectronPlasmaGyroRatio.class));
+	         		 		 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
+	         		 		 break;
 //			         case 4: startActivity(new Intent(DimensionlessActivity.this, IonPlasmaGyroRatio.class));
 //     		 		 	 	 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
 //     		 		 	 	 break;
@@ -73,7 +73,7 @@ public class DimensionlessActivity extends Activity {
 		nameList.add("Electron/Proton Mass Ratio");
 		nameList.add("Number of Particles Debye Sphere");
 		nameList.add("Alfven Velocity/Spd. of Light");
-		nameList.add("Elect. Plas./Gyrofreq. Ratio");
+		nameList.add("Electron Plas./Gyrofreq. Ratio");
 		nameList.add("Ion Plas./Gyrofreq. Ratio");
 		nameList.add("Thermal/Mag. Energy Ratio");
 		nameList.add("Mag./Ion Rest Energy Ratio");

@@ -164,6 +164,10 @@
             android:name="com.example.fundamentalplasmaparameters.AlfvenVelocityLight"
             android:label="@string/title_activity_alfven_velocity_light" >
         </activity>
+        <activity
+            android:name="com.example.fundamentalplasmaparameters.ElectronPlasmaGyroRatio"
+            android:label="@string/title_activity_electron_plasma_gyro_ratio" >
+        </activity>
     </application>
 
 </manifest>
