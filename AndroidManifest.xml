@@ -168,6 +168,10 @@
             android:name="com.example.fundamentalplasmaparameters.ElectronPlasmaGyroRatio"
             android:label="@string/title_activity_electron_plasma_gyro_ratio" >
         </activity>
+        <activity
+            android:name="com.example.fundamentalplasmaparameters.IonPlasmaGyroRatio"
+            android:label="@string/title_activity_ion_plasma_gyro_ratio" >
+        </activity>
     </application>
 
 </manifest>

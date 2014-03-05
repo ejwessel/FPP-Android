@@ -52,16 +52,17 @@ public final class R {
         public static final int ion_inertial=0x7f020016;
         public static final int ion_plas_f=0x7f020017;
         public static final int ion_plas_w=0x7f020018;
-        public static final int ion_sound=0x7f020019;
-        public static final int ion_thermal=0x7f02001a;
-        public static final int ion_trap_rate=0x7f02001b;
-        public static final int n_parallel=0x7f02001c;
-        public static final int n_perp=0x7f02001d;
-        public static final int number_of_particles_debye=0x7f02001e;
-        public static final int parallel_spitzer=0x7f02001f;
-        public static final int textlines_black=0x7f020020;
-        public static final int textlines_blue=0x7f020021;
-        public static final int transverse_spitzer=0x7f020022;
+        public static final int ion_plasma_gyro_ratio=0x7f020019;
+        public static final int ion_sound=0x7f02001a;
+        public static final int ion_thermal=0x7f02001b;
+        public static final int ion_trap_rate=0x7f02001c;
+        public static final int n_parallel=0x7f02001d;
+        public static final int n_perp=0x7f02001e;
+        public static final int number_of_particles_debye=0x7f02001f;
+        public static final int parallel_spitzer=0x7f020020;
+        public static final int textlines_black=0x7f020021;
+        public static final int textlines_blue=0x7f020022;
+        public static final int transverse_spitzer=0x7f020023;
     }
     public static final class id {
         public static final int ImageView01=0x7f09001d;
@@ -123,14 +124,15 @@ public final class R {
         public static final int ion_gyroradius=0x7f030015;
         public static final int ion_inertial_length=0x7f030016;
         public static final int ion_plasma_frequency=0x7f030017;
-        public static final int ion_sound_velocity=0x7f030018;
-        public static final int ion_thermal_velocity=0x7f030019;
-        public static final int ion_trapping_rate=0x7f03001a;
-        public static final int lengths=0x7f03001b;
-        public static final int miscellaneous=0x7f03001c;
-        public static final int num_of_particles_debye_sphere=0x7f03001d;
-        public static final int spitzer_resistivity=0x7f03001e;
-        public static final int velocities=0x7f03001f;
+        public static final int ion_plasma_gyro_ratio=0x7f030018;
+        public static final int ion_sound_velocity=0x7f030019;
+        public static final int ion_thermal_velocity=0x7f03001a;
+        public static final int ion_trapping_rate=0x7f03001b;
+        public static final int lengths=0x7f03001c;
+        public static final int miscellaneous=0x7f03001d;
+        public static final int num_of_particles_debye_sphere=0x7f03001e;
+        public static final int spitzer_resistivity=0x7f03001f;
+        public static final int velocities=0x7f030020;
     }
     public static final class menu {
         public static final int about=0x7f080000;
@@ -156,15 +158,16 @@ public final class R {
         public static final int ion_gyroradius=0x7f080014;
         public static final int ion_inertial_length=0x7f080015;
         public static final int ion_plasma_frequency=0x7f080016;
-        public static final int ion_sound_velocity=0x7f080017;
-        public static final int ion_thermal_velocity=0x7f080018;
-        public static final int ion_trapping_rate=0x7f080019;
-        public static final int lengths=0x7f08001a;
-        public static final int main=0x7f08001b;
-        public static final int miscellaneous=0x7f08001c;
-        public static final int num_of_particles_debye_sphere=0x7f08001d;
-        public static final int spitzer_resistivity=0x7f08001e;
-        public static final int velocities=0x7f08001f;
+        public static final int ion_plasma_gyro_ratio=0x7f080017;
+        public static final int ion_sound_velocity=0x7f080018;
+        public static final int ion_thermal_velocity=0x7f080019;
+        public static final int ion_trapping_rate=0x7f08001a;
+        public static final int lengths=0x7f08001b;
+        public static final int main=0x7f08001c;
+        public static final int miscellaneous=0x7f08001d;
+        public static final int num_of_particles_debye_sphere=0x7f08001e;
+        public static final int spitzer_resistivity=0x7f08001f;
+        public static final int velocities=0x7f080020;
     }
     public static final class string {
         public static final int action_settings=0x7f060002;
@@ -194,6 +197,7 @@ public final class R {
         public static final int title_activity_ion_gyroradius=0x7f060015;
         public static final int title_activity_ion_inertial_length=0x7f060017;
         public static final int title_activity_ion_plasma_frequency=0x7f06000d;
+        public static final int title_activity_ion_plasma_gyro_ratio=0x7f060023;
         public static final int title_activity_ion_sound_velocity=0x7f06001b;
         public static final int title_activity_ion_thermal_velocity=0x7f06001a;
         public static final int title_activity_ion_trapping_rate=0x7f06000f;

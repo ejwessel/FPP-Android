@@ -48,9 +48,9 @@ public class DimensionlessActivity extends Activity {
 			         case 3: startActivity(new Intent(DimensionlessActivity.this, ElectronPlasmaGyroRatio.class));
 	         		 		 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
 	         		 		 break;
-//			         case 4: startActivity(new Intent(DimensionlessActivity.this, IonPlasmaGyroRatio.class));
-//     		 		 	 	 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
-//     		 		 	 	 break;
+			         case 4: startActivity(new Intent(DimensionlessActivity.this, IonPlasmaGyroRatio.class));
+     		 		 	 	 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
+     		 		 	 	 break;
 //			         case 5: startActivity(new Intent(DimensionlessActivity.this, ThermalMagEnergyRatio.class));
 //		 		 	 	 		 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
 //		 		 	 	 		 break;

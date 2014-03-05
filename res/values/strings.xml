@@ -36,5 +36,6 @@
     <string name="title_activity_num_of_particles_debye_sphere">No. of Particles Debye Sphere</string>
     <string name="title_activity_alfven_velocity_light">Alfven Velocity/Spd. of Light</string>
     <string name="title_activity_electron_plasma_gyro_ratio">Electron Plas./Gyrofreq. Ratio</string>
+    <string name="title_activity_ion_plasma_gyro_ratio">Ion Plasma/Gyrofreq. Ratio</string>
 
 </resources>
