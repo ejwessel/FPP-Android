@@ -160,6 +160,10 @@
             android:name="com.example.fundamentalplasmaparameters.NumOfParticlesDebyeSphere"
             android:label="@string/title_activity_num_of_particles_debye_sphere" >
         </activity>
+        <activity
+            android:name="com.example.fundamentalplasmaparameters.AlfvenVelocityLight"
+            android:label="@string/title_activity_alfven_velocity_light" >
+        </activity>
     </application>
 
 </manifest>
