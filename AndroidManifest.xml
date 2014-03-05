@@ -156,6 +156,10 @@
             android:name="com.example.fundamentalplasmaparameters.ElectronProtonMassRatio"
             android:label="@string/title_activity_electron_proton_mass_ratio" >
         </activity>
+        <activity
+            android:name="com.example.fundamentalplasmaparameters.NumOfParticlesDebyeSphere"
+            android:label="@string/title_activity_num_of_particles_debye_sphere" >
+        </activity>
     </application>
 
 </manifest>
