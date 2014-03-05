@@ -30,5 +30,6 @@
     <string name="title_activity_ion_thermal_velocity">Ion Thermal Velocity</string>
     <string name="title_activity_ion_sound_velocity">Ion Sound Velocity</string>
     <string name="title_activity_alfven_velocity">Alfvén Velocity</string>
+    <string name="title_activity_bohm_diffusion_coefficient">Bohm Diffusion Coefficient</string>
 
 </resources>

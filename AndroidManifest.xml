@@ -144,6 +144,10 @@
             android:name="com.example.fundamentalplasmaparameters.AlfvenVelocity"
             android:label="@string/title_activity_alfven_velocity" >
         </activity>
+        <activity
+            android:name="com.example.fundamentalplasmaparameters.BohmDiffusionCoefficient"
+            android:label="@string/title_activity_bohm_diffusion_coefficient" >
+        </activity>
     </application>
 
 </manifest>
