@@ -132,6 +132,10 @@
             android:name="com.example.fundamentalplasmaparameters.ElectronThermalVelocity"
             android:label="@string/title_activity_electron_thermal_velocity" >
         </activity>
+        <activity
+            android:name="com.example.fundamentalplasmaparameters.IonThermalVelocity"
+            android:label="@string/title_activity_ion_thermal_velocity" >
+        </activity>
     </application>
 
 </manifest>

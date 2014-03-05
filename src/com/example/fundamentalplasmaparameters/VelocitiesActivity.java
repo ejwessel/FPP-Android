@@ -39,9 +39,9 @@ public class VelocitiesActivity extends Activity {
 			         case 0: startActivity(new Intent(VelocitiesActivity.this, ElectronThermalVelocity.class));
 				         	 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
 				         	 break;
-//			         case 1: startActivity(new Intent(VelocitiesActivity.this, IonThermalVelocity.class));
-//		         	 		 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
-//		         	 		 break;
+			         case 1: startActivity(new Intent(VelocitiesActivity.this, IonThermalVelocity.class));
+		         	 		 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
+		         	 		 break;
 //			         case 2: startActivity(new Intent(VelocitiesActivity.this, IonSoundVelocity.class));
 //         	 		 		 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
 //         	 		 		 break;
