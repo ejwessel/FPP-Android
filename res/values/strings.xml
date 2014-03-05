@@ -32,5 +32,6 @@
     <string name="title_activity_alfven_velocity">Alfvén Velocity</string>
     <string name="title_activity_bohm_diffusion_coefficient">Bohm Diffusion Coefficient</string>
     <string name="title_activity_spitzer_resistivity">Spitzer Resistivity</string>
+    <string name="title_activity_electron_proton_mass_ratio">Electron/Proton Mass Ratio</string>
 
 </resources>

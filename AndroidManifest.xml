@@ -152,6 +152,10 @@
             android:name="com.example.fundamentalplasmaparameters.SpitzerResistivity"
             android:label="@string/title_activity_spitzer_resistivity" >
         </activity>
+        <activity
+            android:name="com.example.fundamentalplasmaparameters.ElectronProtonMassRatio"
+            android:label="@string/title_activity_electron_proton_mass_ratio" >
+        </activity>
     </application>
 
 </manifest>

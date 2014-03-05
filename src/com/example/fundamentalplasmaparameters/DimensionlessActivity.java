@@ -31,10 +31,34 @@ public class DimensionlessActivity extends Activity {
 		ArrayAdapter<String> adapter =  new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, nameList);
 		optionList.setAdapter(adapter); //populates list
 		optionList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-			     public void onItemClick(AdapterView<?> parentAdapter, View view, int position, long id) {
-			         TextView clickedView = (TextView) view;
-			         String textClicked = clickedView.getText().toString();
-			     }
+		     public void onItemClick(AdapterView<?> parentAdapter, View view, int position, long id) {
+		    	 TextView clickedView = (TextView) view;
+		         String textClicked = clickedView.getText().toString();
+		         
+		         switch(position){
+			         case 0: startActivity(new Intent(DimensionlessActivity.this, ElectronProtonMassRatio.class));
+				         	 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
+				         	 break;
+//			         case 1: startActivity(new Intent(DimensionlessActivity.this, NumParticlesDebyeSphere.class));
+//			         		 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
+//			         		 break;
+//			         case 2: startActivity(new Intent(DimensionlessActivity.this, AlfvenVelocityLight.class));
+//			         		 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
+//			         		 break;
+//			         case 3: startActivity(new Intent(DimensionlessActivity.this, ElectronPlasmaGyroRatio.class));
+//	         		 		 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
+//	         		 		 break;
+//			         case 4: startActivity(new Intent(DimensionlessActivity.this, IonPlasmaGyroRatio.class));
+//     		 		 	 	 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
+//     		 		 	 	 break;
+//			         case 5: startActivity(new Intent(DimensionlessActivity.this, ThermalMagEnergyRatio.class));
+//		 		 	 	 		 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
+//		 		 	 	 		 break;
+//			         case 6: startActivity(new Intent(DimensionlessActivity.this, MagIonEnergyRatio.class));
+// 		 	 	 		 	 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
+// 		 	 	 		 	 break;
+		         }
+		     }
 		});
 	}
 
