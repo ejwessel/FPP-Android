@@ -31,10 +31,25 @@ public class VelocitiesActivity extends Activity {
 		ArrayAdapter<String> adapter =  new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, nameList);
 		optionList.setAdapter(adapter); //populates list
 		optionList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-			     public void onItemClick(AdapterView<?> parentAdapter, View view, int position, long id) {
-			         TextView clickedView = (TextView) view;
-			         String textClicked = clickedView.getText().toString();
-			     }
+		     public void onItemClick(AdapterView<?> parentAdapter, View view, int position, long id) {
+		    	 TextView clickedView = (TextView) view;
+		         String textClicked = clickedView.getText().toString();
+		         
+		         switch(position){
+			         case 0: startActivity(new Intent(VelocitiesActivity.this, ElectronThermalVelocity.class));
+				         	 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
+				         	 break;
+//			         case 1: startActivity(new Intent(VelocitiesActivity.this, IonThermalVelocity.class));
+//		         	 		 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
+//		         	 		 break;
+//			         case 2: startActivity(new Intent(VelocitiesActivity.this, IonSoundVelocity.class));
+//         	 		 		 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
+//         	 		 		 break;
+//			         case 3: startActivity(new Intent(VelocitiesActivity.this, AlfvenVelocity.class));
+// 	 		 		 		 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
+// 	 		 		 		 break;
+		         }
+		     }
 		});
 	}
 
