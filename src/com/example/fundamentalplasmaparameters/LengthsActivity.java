@@ -55,6 +55,9 @@ public class LengthsActivity extends Activity {
 			         case 5: startActivity(new Intent(LengthsActivity.this, IonInertialLength.class));
  		 		 	 		 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
  		 		 	 		 break;
+			         case 6: startActivity(new Intent(LengthsActivity.this, DebyeLength.class));
+			         		 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
+			         		 break;
 		         }
 		     }
 		});

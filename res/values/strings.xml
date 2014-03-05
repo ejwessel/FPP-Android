@@ -25,5 +25,6 @@
     <string name="title_activity_ion_gyroradius">Ion Gyroradius</string>
     <string name="title_activity_electron_inertial_length">Electron Inertial Length</string>
     <string name="title_activity_ion_inertial_length">Ion Inertial Length</string>
+    <string name="title_activity_debye_length">Debye Length</string>
 
 </resources>

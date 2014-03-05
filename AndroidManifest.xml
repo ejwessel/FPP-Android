@@ -123,6 +123,11 @@
             android:label="@string/title_activity_ion_inertial_length"
             android:screenOrientation="portrait" >
         </activity>
+        <activity
+            android:name="com.example.fundamentalplasmaparameters.DebyeLength"
+            android:label="@string/title_activity_debye_length"
+            android:screenOrientation="portrait" >
+        </activity>
     </application>
 
 </manifest>
