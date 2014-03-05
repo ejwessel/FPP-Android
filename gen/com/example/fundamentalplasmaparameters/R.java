@@ -42,11 +42,12 @@ public final class R {
         public static final int ion_gyro_f=0x7f02000c;
         public static final int ion_gyro_w=0x7f02000d;
         public static final int ion_gyroradius=0x7f02000e;
-        public static final int ion_plas_f=0x7f02000f;
-        public static final int ion_plas_w=0x7f020010;
-        public static final int ion_trap_rate=0x7f020011;
-        public static final int textlines_black=0x7f020012;
-        public static final int textlines_blue=0x7f020013;
+        public static final int ion_inertial=0x7f02000f;
+        public static final int ion_plas_f=0x7f020010;
+        public static final int ion_plas_w=0x7f020011;
+        public static final int ion_trap_rate=0x7f020012;
+        public static final int textlines_black=0x7f020013;
+        public static final int textlines_blue=0x7f020014;
     }
     public static final class id {
         public static final int ScrollView1=0x7f090001;
@@ -92,11 +93,12 @@ public final class R {
         public static final int ion_collision_rate=0x7f03000c;
         public static final int ion_gyrofrequency=0x7f03000d;
         public static final int ion_gyroradius=0x7f03000e;
-        public static final int ion_plasma_frequency=0x7f03000f;
-        public static final int ion_trapping_rate=0x7f030010;
-        public static final int lengths=0x7f030011;
-        public static final int miscellaneous=0x7f030012;
-        public static final int velocities=0x7f030013;
+        public static final int ion_inertial_length=0x7f03000f;
+        public static final int ion_plasma_frequency=0x7f030010;
+        public static final int ion_trapping_rate=0x7f030011;
+        public static final int lengths=0x7f030012;
+        public static final int miscellaneous=0x7f030013;
+        public static final int velocities=0x7f030014;
     }
     public static final class menu {
         public static final int about=0x7f080000;
@@ -113,12 +115,13 @@ public final class R {
         public static final int ion_collision_rate=0x7f08000b;
         public static final int ion_gyrofrequency=0x7f08000c;
         public static final int ion_gyroradius=0x7f08000d;
-        public static final int ion_plasma_frequency=0x7f08000e;
-        public static final int ion_trapping_rate=0x7f08000f;
-        public static final int lengths=0x7f080010;
-        public static final int main=0x7f080011;
-        public static final int miscellaneous=0x7f080012;
-        public static final int velocities=0x7f080013;
+        public static final int ion_inertial_length=0x7f08000e;
+        public static final int ion_plasma_frequency=0x7f08000f;
+        public static final int ion_trapping_rate=0x7f080010;
+        public static final int lengths=0x7f080011;
+        public static final int main=0x7f080012;
+        public static final int miscellaneous=0x7f080013;
+        public static final int velocities=0x7f080014;
     }
     public static final class string {
         public static final int action_settings=0x7f060002;
@@ -139,6 +142,7 @@ public final class R {
         public static final int title_activity_ion_collision_rate=0x7f060011;
         public static final int title_activity_ion_gyrofrequency=0x7f06000b;
         public static final int title_activity_ion_gyroradius=0x7f060015;
+        public static final int title_activity_ion_inertial_length=0x7f060017;
         public static final int title_activity_ion_plasma_frequency=0x7f06000d;
         public static final int title_activity_ion_trapping_rate=0x7f06000f;
         public static final int title_activity_lengths=0x7f060005;
