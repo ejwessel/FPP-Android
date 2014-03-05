@@ -113,6 +113,11 @@
             android:label="@string/title_activity_ion_gyroradius"
             android:screenOrientation="portrait" >
         </activity>
+        <activity
+            android:name="com.example.fundamentalplasmaparameters.ElectronInertialLength"
+            android:label="@string/title_activity_electron_inertial_length"
+            android:screenOrientation="portrait" >
+        </activity>
     </application>
 
 </manifest>

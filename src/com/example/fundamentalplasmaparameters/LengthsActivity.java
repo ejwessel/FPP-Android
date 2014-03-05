@@ -49,6 +49,9 @@ public class LengthsActivity extends Activity {
 			         case 3: startActivity(new Intent(LengthsActivity.this, IonGyroradius.class));
  	 		 		 		 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
  	 		 		 		 break;
+			         case 4: startActivity(new Intent(LengthsActivity.this, ElectronInertialLength.class));
+		 		 		 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
+		 		 		 break;
 		         }
 		     }
 		});
