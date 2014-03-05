@@ -28,5 +28,6 @@
     <string name="title_activity_debye_length">Debye Length</string>
     <string name="title_activity_electron_thermal_velocity">Electron Thermal Velocity</string>
     <string name="title_activity_ion_thermal_velocity">Ion Thermal Velocity</string>
+    <string name="title_activity_ion_sound_velocity">Ion Sound Velocity</string>
 
 </resources>

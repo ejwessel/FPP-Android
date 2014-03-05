@@ -136,6 +136,10 @@
             android:name="com.example.fundamentalplasmaparameters.IonThermalVelocity"
             android:label="@string/title_activity_ion_thermal_velocity" >
         </activity>
+        <activity
+            android:name="com.example.fundamentalplasmaparameters.IonSoundVelocity"
+            android:label="@string/title_activity_ion_sound_velocity" >
+        </activity>
     </application>
 
 </manifest>

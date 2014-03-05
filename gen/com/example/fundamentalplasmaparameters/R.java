@@ -47,14 +47,17 @@ public final class R {
         public static final int ion_inertial=0x7f020011;
         public static final int ion_plas_f=0x7f020012;
         public static final int ion_plas_w=0x7f020013;
-        public static final int ion_trap_rate=0x7f020014;
-        public static final int textlines_black=0x7f020015;
-        public static final int textlines_blue=0x7f020016;
+        public static final int ion_sound=0x7f020014;
+        public static final int ion_thermal=0x7f020015;
+        public static final int ion_trap_rate=0x7f020016;
+        public static final int textlines_black=0x7f020017;
+        public static final int textlines_blue=0x7f020018;
     }
     public static final class id {
         public static final int ScrollView1=0x7f090001;
-        public static final int action_settings=0x7f090019;
+        public static final int action_settings=0x7f09001c;
         public static final int answer=0x7f090003;
+        public static final int answer_c=0x7f090019;
         public static final int answer_f=0x7f09000c;
         public static final int answer_lambda=0x7f090006;
         public static final int answer_r=0x7f090010;
@@ -64,6 +67,8 @@ public final class R {
         public static final int bInput=0x7f09000e;
         public static final int eExponent=0x7f090014;
         public static final int eInput=0x7f090013;
+        public static final int gammaExponent=0x7f09001b;
+        public static final int gammaInput=0x7f09001a;
         public static final int imageView1=0x7f090002;
         public static final int kExponent=0x7f090012;
         public static final int kInput=0x7f090011;
@@ -99,11 +104,12 @@ public final class R {
         public static final int ion_gyroradius=0x7f030010;
         public static final int ion_inertial_length=0x7f030011;
         public static final int ion_plasma_frequency=0x7f030012;
-        public static final int ion_thermal_velocity=0x7f030013;
-        public static final int ion_trapping_rate=0x7f030014;
-        public static final int lengths=0x7f030015;
-        public static final int miscellaneous=0x7f030016;
-        public static final int velocities=0x7f030017;
+        public static final int ion_sound_velocity=0x7f030013;
+        public static final int ion_thermal_velocity=0x7f030014;
+        public static final int ion_trapping_rate=0x7f030015;
+        public static final int lengths=0x7f030016;
+        public static final int miscellaneous=0x7f030017;
+        public static final int velocities=0x7f030018;
     }
     public static final class menu {
         public static final int about=0x7f080000;
@@ -124,12 +130,13 @@ public final class R {
         public static final int ion_gyroradius=0x7f08000f;
         public static final int ion_inertial_length=0x7f080010;
         public static final int ion_plasma_frequency=0x7f080011;
-        public static final int ion_thermal_velocity=0x7f080012;
-        public static final int ion_trapping_rate=0x7f080013;
-        public static final int lengths=0x7f080014;
-        public static final int main=0x7f080015;
-        public static final int miscellaneous=0x7f080016;
-        public static final int velocities=0x7f080017;
+        public static final int ion_sound_velocity=0x7f080012;
+        public static final int ion_thermal_velocity=0x7f080013;
+        public static final int ion_trapping_rate=0x7f080014;
+        public static final int lengths=0x7f080015;
+        public static final int main=0x7f080016;
+        public static final int miscellaneous=0x7f080017;
+        public static final int velocities=0x7f080018;
     }
     public static final class string {
         public static final int action_settings=0x7f060002;
@@ -154,6 +161,7 @@ public final class R {
         public static final int title_activity_ion_gyroradius=0x7f060015;
         public static final int title_activity_ion_inertial_length=0x7f060017;
         public static final int title_activity_ion_plasma_frequency=0x7f06000d;
+        public static final int title_activity_ion_sound_velocity=0x7f06001b;
         public static final int title_activity_ion_thermal_velocity=0x7f06001a;
         public static final int title_activity_ion_trapping_rate=0x7f06000f;
         public static final int title_activity_lengths=0x7f060005;
