@@ -45,9 +45,9 @@ public class VelocitiesActivity extends Activity {
 			         case 2: startActivity(new Intent(VelocitiesActivity.this, IonSoundVelocity.class));
          	 		 		 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
          	 		 		 break;
-//			         case 3: startActivity(new Intent(VelocitiesActivity.this, AlfvenVelocity.class));
-// 	 		 		 		 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
-// 	 		 		 		 break;
+			         case 3: startActivity(new Intent(VelocitiesActivity.this, AlfvenVelocity.class));
+ 	 		 		 		 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
+ 	 		 		 		 break;
 		         }
 		     }
 		});
@@ -64,7 +64,7 @@ public class VelocitiesActivity extends Activity {
 		nameList.add("Electron Thermal Velocity");
 		nameList.add("Ion Thermal Velocity");
 		nameList.add("Ion Sound Velocity");
-		nameList.add("Alfven Velocity");
+		nameList.add("Alfv\u00E9n Velocity");
 	}
 	
 	@Override
