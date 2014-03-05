@@ -39,9 +39,9 @@ public class MiscellaneousActivity extends Activity {
 			         case 0: startActivity(new Intent(MiscellaneousActivity.this, BohmDiffusionCoefficient.class));
 				         	 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
 				         	 break;
-//			         case 1: startActivity(new Intent(MiscellaneousActivity.this, SpitzerResistivity.class));
-//		         	 		 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
-//		         	 		 break;
+			         case 1: startActivity(new Intent(MiscellaneousActivity.this, SpitzerResistivity.class));
+		         	 		 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
+		         	 		 break;
 		         }
 		     }
 		});

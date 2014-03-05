@@ -52,17 +52,24 @@ public final class R {
         public static final int ion_sound=0x7f020016;
         public static final int ion_thermal=0x7f020017;
         public static final int ion_trap_rate=0x7f020018;
-        public static final int textlines_black=0x7f020019;
-        public static final int textlines_blue=0x7f02001a;
+        public static final int n_parallel=0x7f020019;
+        public static final int n_perp=0x7f02001a;
+        public static final int parallel_spitzer=0x7f02001b;
+        public static final int textlines_black=0x7f02001c;
+        public static final int textlines_blue=0x7f02001d;
+        public static final int transverse_spitzer=0x7f02001e;
     }
     public static final class id {
+        public static final int ImageView01=0x7f09001d;
         public static final int ScrollView1=0x7f090001;
-        public static final int action_settings=0x7f09001d;
+        public static final int action_settings=0x7f090020;
         public static final int answer=0x7f09000d;
         public static final int answer_c=0x7f09001a;
         public static final int answer_d=0x7f09000a;
         public static final int answer_f=0x7f090011;
         public static final int answer_lambda=0x7f09000e;
+        public static final int answer_parallel=0x7f09001f;
+        public static final int answer_perp=0x7f09001e;
         public static final int answer_r=0x7f090013;
         public static final int answer_v=0x7f090003;
         public static final int answer_w=0x7f090012;
@@ -114,7 +121,8 @@ public final class R {
         public static final int ion_trapping_rate=0x7f030017;
         public static final int lengths=0x7f030018;
         public static final int miscellaneous=0x7f030019;
-        public static final int velocities=0x7f03001a;
+        public static final int spitzer_resistivity=0x7f03001a;
+        public static final int velocities=0x7f03001b;
     }
     public static final class menu {
         public static final int about=0x7f080000;
@@ -143,7 +151,8 @@ public final class R {
         public static final int lengths=0x7f080017;
         public static final int main=0x7f080018;
         public static final int miscellaneous=0x7f080019;
-        public static final int velocities=0x7f08001a;
+        public static final int spitzer_resistivity=0x7f08001a;
+        public static final int velocities=0x7f08001b;
     }
     public static final class string {
         public static final int action_settings=0x7f060002;
@@ -175,6 +184,7 @@ public final class R {
         public static final int title_activity_ion_trapping_rate=0x7f06000f;
         public static final int title_activity_lengths=0x7f060005;
         public static final int title_activity_miscellaneous=0x7f060008;
+        public static final int title_activity_spitzer_resistivity=0x7f06001e;
         public static final int title_activity_velocities=0x7f060006;
     }
     public static final class style {

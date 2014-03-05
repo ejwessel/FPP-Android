@@ -148,6 +148,10 @@
             android:name="com.example.fundamentalplasmaparameters.BohmDiffusionCoefficient"
             android:label="@string/title_activity_bohm_diffusion_coefficient" >
         </activity>
+        <activity
+            android:name="com.example.fundamentalplasmaparameters.SpitzerResistivity"
+            android:label="@string/title_activity_spitzer_resistivity" >
+        </activity>
     </application>
 
 </manifest>
