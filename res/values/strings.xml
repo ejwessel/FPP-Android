@@ -38,5 +38,6 @@
     <string name="title_activity_electron_plasma_gyro_ratio">Electron Plas./Gyrofreq. Ratio</string>
     <string name="title_activity_ion_plasma_gyro_ratio">Ion Plasma/Gyrofreq. Ratio</string>
     <string name="title_activity_thermal_mag_energy_ratio">Thermal/Mag. Energy Ratio</string>
+    <string name="title_activity_mag_ion_rest_energy_ratio">Mag./Ion Rest Energy Ratio</string>
 
 </resources>

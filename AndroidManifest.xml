@@ -176,6 +176,10 @@
             android:name="com.example.fundamentalplasmaparameters.ThermalMagEnergyRatio"
             android:label="@string/title_activity_thermal_mag_energy_ratio" >
         </activity>
+        <activity
+            android:name="com.example.fundamentalplasmaparameters.MagIonRestEnergyRatio"
+            android:label="@string/title_activity_mag_ion_rest_energy_ratio" >
+        </activity>
     </application>
 
 </manifest>

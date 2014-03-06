@@ -56,14 +56,15 @@ public final class R {
         public static final int ion_sound=0x7f02001a;
         public static final int ion_thermal=0x7f02001b;
         public static final int ion_trap_rate=0x7f02001c;
-        public static final int n_parallel=0x7f02001d;
-        public static final int n_perp=0x7f02001e;
-        public static final int number_of_particles_debye=0x7f02001f;
-        public static final int parallel_spitzer=0x7f020020;
-        public static final int textlines_black=0x7f020021;
-        public static final int textlines_blue=0x7f020022;
-        public static final int thermal_mag_ratio=0x7f020023;
-        public static final int transverse_spitzer=0x7f020024;
+        public static final int mag_ion_rest_ratio=0x7f02001d;
+        public static final int n_parallel=0x7f02001e;
+        public static final int n_perp=0x7f02001f;
+        public static final int number_of_particles_debye=0x7f020020;
+        public static final int parallel_spitzer=0x7f020021;
+        public static final int textlines_black=0x7f020022;
+        public static final int textlines_blue=0x7f020023;
+        public static final int thermal_mag_ratio=0x7f020024;
+        public static final int transverse_spitzer=0x7f020025;
     }
     public static final class id {
         public static final int ImageView01=0x7f09001d;
@@ -131,11 +132,12 @@ public final class R {
         public static final int ion_thermal_velocity=0x7f03001a;
         public static final int ion_trapping_rate=0x7f03001b;
         public static final int lengths=0x7f03001c;
-        public static final int miscellaneous=0x7f03001d;
-        public static final int num_of_particles_debye_sphere=0x7f03001e;
-        public static final int spitzer_resistivity=0x7f03001f;
-        public static final int thermal_mag_energy_ratio=0x7f030020;
-        public static final int velocities=0x7f030021;
+        public static final int mag_ion_rest_energy_ratio=0x7f03001d;
+        public static final int miscellaneous=0x7f03001e;
+        public static final int num_of_particles_debye_sphere=0x7f03001f;
+        public static final int spitzer_resistivity=0x7f030020;
+        public static final int thermal_mag_energy_ratio=0x7f030021;
+        public static final int velocities=0x7f030022;
     }
     public static final class menu {
         public static final int about=0x7f080000;
@@ -166,12 +168,13 @@ public final class R {
         public static final int ion_thermal_velocity=0x7f080019;
         public static final int ion_trapping_rate=0x7f08001a;
         public static final int lengths=0x7f08001b;
-        public static final int main=0x7f08001c;
-        public static final int miscellaneous=0x7f08001d;
-        public static final int num_of_particles_debye_sphere=0x7f08001e;
-        public static final int spitzer_resistivity=0x7f08001f;
-        public static final int thermal_mag_energy_ratio=0x7f080020;
-        public static final int velocities=0x7f080021;
+        public static final int mag_ion_rest_energy_ratio=0x7f08001c;
+        public static final int main=0x7f08001d;
+        public static final int miscellaneous=0x7f08001e;
+        public static final int num_of_particles_debye_sphere=0x7f08001f;
+        public static final int spitzer_resistivity=0x7f080020;
+        public static final int thermal_mag_energy_ratio=0x7f080021;
+        public static final int velocities=0x7f080022;
     }
     public static final class string {
         public static final int action_settings=0x7f060002;
@@ -206,6 +209,7 @@ public final class R {
         public static final int title_activity_ion_thermal_velocity=0x7f06001a;
         public static final int title_activity_ion_trapping_rate=0x7f06000f;
         public static final int title_activity_lengths=0x7f060005;
+        public static final int title_activity_mag_ion_rest_energy_ratio=0x7f060025;
         public static final int title_activity_miscellaneous=0x7f060008;
         public static final int title_activity_num_of_particles_debye_sphere=0x7f060020;
         public static final int title_activity_spitzer_resistivity=0x7f06001e;

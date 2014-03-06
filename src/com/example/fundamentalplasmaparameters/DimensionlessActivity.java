@@ -54,9 +54,9 @@ public class DimensionlessActivity extends Activity {
 			         case 5: startActivity(new Intent(DimensionlessActivity.this, ThermalMagEnergyRatio.class));
 		 		 	 	 		 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
 		 		 	 	 		 break;
-//			         case 6: startActivity(new Intent(DimensionlessActivity.this, MagIonEnergyRatio.class));
-// 		 	 	 		 	 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
-// 		 	 	 		 	 break;
+			         case 6: startActivity(new Intent(DimensionlessActivity.this, MagIonRestEnergyRatio.class));
+ 		 	 	 		 	 overridePendingTransition(R.anim.right_slide_in, R.anim.left_slide_out);
+ 		 	 	 		 	 break;
 		         }
 		     }
 		});
