@@ -37,5 +37,6 @@
     <string name="title_activity_alfven_velocity_light">Alfven Velocity/Spd. of Light</string>
     <string name="title_activity_electron_plasma_gyro_ratio">Electron Plas./Gyrofreq. Ratio</string>
     <string name="title_activity_ion_plasma_gyro_ratio">Ion Plasma/Gyrofreq. Ratio</string>
+    <string name="title_activity_thermal_mag_energy_ratio">Thermal/Mag. Energy Ratio</string>
 
 </resources>

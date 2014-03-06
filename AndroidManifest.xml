@@ -172,6 +172,10 @@
             android:name="com.example.fundamentalplasmaparameters.IonPlasmaGyroRatio"
             android:label="@string/title_activity_ion_plasma_gyro_ratio" >
         </activity>
+        <activity
+            android:name="com.example.fundamentalplasmaparameters.ThermalMagEnergyRatio"
+            android:label="@string/title_activity_thermal_mag_energy_ratio" >
+        </activity>
     </application>
 
 </manifest>

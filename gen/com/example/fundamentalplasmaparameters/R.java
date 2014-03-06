@@ -62,13 +62,15 @@ public final class R {
         public static final int parallel_spitzer=0x7f020020;
         public static final int textlines_black=0x7f020021;
         public static final int textlines_blue=0x7f020022;
-        public static final int transverse_spitzer=0x7f020023;
+        public static final int thermal_mag_ratio=0x7f020023;
+        public static final int transverse_spitzer=0x7f020024;
     }
     public static final class id {
         public static final int ImageView01=0x7f09001d;
         public static final int ScrollView1=0x7f090001;
-        public static final int action_settings=0x7f090020;
+        public static final int action_settings=0x7f090021;
         public static final int answer=0x7f09000a;
+        public static final int answer_beta=0x7f090020;
         public static final int answer_c=0x7f09001a;
         public static final int answer_d=0x7f09000b;
         public static final int answer_f=0x7f090011;
@@ -132,7 +134,8 @@ public final class R {
         public static final int miscellaneous=0x7f03001d;
         public static final int num_of_particles_debye_sphere=0x7f03001e;
         public static final int spitzer_resistivity=0x7f03001f;
-        public static final int velocities=0x7f030020;
+        public static final int thermal_mag_energy_ratio=0x7f030020;
+        public static final int velocities=0x7f030021;
     }
     public static final class menu {
         public static final int about=0x7f080000;
@@ -167,7 +170,8 @@ public final class R {
         public static final int miscellaneous=0x7f08001d;
         public static final int num_of_particles_debye_sphere=0x7f08001e;
         public static final int spitzer_resistivity=0x7f08001f;
-        public static final int velocities=0x7f080020;
+        public static final int thermal_mag_energy_ratio=0x7f080020;
+        public static final int velocities=0x7f080021;
     }
     public static final class string {
         public static final int action_settings=0x7f060002;
@@ -205,6 +209,7 @@ public final class R {
         public static final int title_activity_miscellaneous=0x7f060008;
         public static final int title_activity_num_of_particles_debye_sphere=0x7f060020;
         public static final int title_activity_spitzer_resistivity=0x7f06001e;
+        public static final int title_activity_thermal_mag_energy_ratio=0x7f060024;
         public static final int title_activity_velocities=0x7f060006;
     }
     public static final class style {
