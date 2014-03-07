@@ -2,11 +2,11 @@ package com.example.fundamentalplasmaparameters;
 
 import java.util.ArrayList;
 
+import com.ewit.FPP.*;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
@@ -53,13 +53,6 @@ public class VelocitiesActivity extends Activity {
 		});
 	}
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.velocities, menu);
-		return true;
-	}
-
 	public void initList(){
 		nameList.add("Electron Thermal Velocity");
 		nameList.add("Ion Thermal Velocity");
@@ -69,6 +62,7 @@ public class VelocitiesActivity extends Activity {
 	
 	@Override
 	public void onBackPressed() {
+		
 	    super.onBackPressed();
 	    overridePendingTransition(R.anim.left_slide_in, R.anim.right_slide_out);
 	}

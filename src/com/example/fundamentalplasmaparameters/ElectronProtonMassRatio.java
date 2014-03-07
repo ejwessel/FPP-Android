@@ -1,10 +1,10 @@
 package com.example.fundamentalplasmaparameters;
 
-import android.os.Bundle;
+import com.ewit.FPP.*;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
-import android.view.Menu;
+import android.os.Bundle;
 import android.view.MenuItem;
 
 public class ElectronProtonMassRatio extends Activity {
@@ -16,13 +16,6 @@ public class ElectronProtonMassRatio extends Activity {
 		
 		ActionBar actionBar = getActionBar();
 		actionBar.setDisplayHomeAsUpEnabled(true);
-	}
-
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.electron_proton_mass_ratio, menu);
-		return true;
 	}
 
 	public void onBackPressed() {

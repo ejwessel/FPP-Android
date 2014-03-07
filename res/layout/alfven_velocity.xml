@@ -56,7 +56,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text=" Hz"
+                android:text=" cm/sec"
                 android:textSize="20sp" />
         </LinearLayout>
 
@@ -146,6 +146,13 @@
                 android:inputType="numberDecimal|numberSigned"
                 android:padding="5dp"
                 android:text="0" />
+            
+            <ImageView
+		        android:id="@+id/imageView1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:padding="5dp"
+		        android:src="@drawable/cm3"/>
         </LinearLayout>
         
         <LinearLayout
@@ -190,6 +197,13 @@
                 android:inputType="numberDecimal|numberSigned"
                 android:padding="5dp"
                 android:text="0" />
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=" B"
+                android:textSize="20sp" />
         </LinearLayout>
         
     </LinearLayout>

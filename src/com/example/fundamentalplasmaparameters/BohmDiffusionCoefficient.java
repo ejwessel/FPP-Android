@@ -1,12 +1,12 @@
 package com.example.fundamentalplasmaparameters;
 
+import com.ewit.FPP.*;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
 
@@ -39,13 +39,6 @@ public class BohmDiffusionCoefficient extends Activity {
 		bExponent.addTextChangedListener(inputWatcher);
 		
 		dAnswer = (EditText)findViewById(R.id.answer_d);
-	}
-
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.bohm_diffusion_coefficient, menu);
-		return true;
 	}
 
 	public void onBackPressed() {

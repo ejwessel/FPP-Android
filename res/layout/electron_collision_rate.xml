@@ -56,7 +56,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text=" Hz"
+                android:text=" 1/sec"
                 android:textSize="20sp" />
         </LinearLayout>
         
@@ -103,6 +103,13 @@
 		        android:padding="5dp"
 		        android:text="0" >
 		    </EditText>
+		    
+		    <ImageView
+		        android:id="@+id/imageView1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:padding="5dp"
+		        android:src="@drawable/cm3"/>
         </LinearLayout>
         
         <LinearLayout 
@@ -191,6 +198,13 @@
 		        android:padding="5dp"
 		        android:text="0" >
 		    </EditText>
+		    
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=" eV"
+                android:textSize="20sp" />
         </LinearLayout>
         
     </LinearLayout>

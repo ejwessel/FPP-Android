@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.fundamentalplasmaparameters"
+    package="com.ewit.FPP"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -130,55 +130,68 @@
         </activity>
         <activity
             android:name="com.example.fundamentalplasmaparameters.ElectronThermalVelocity"
-            android:label="@string/title_activity_electron_thermal_velocity" >
+            android:label="@string/title_activity_electron_thermal_velocity"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.example.fundamentalplasmaparameters.IonThermalVelocity"
-            android:label="@string/title_activity_ion_thermal_velocity" >
+            android:label="@string/title_activity_ion_thermal_velocity"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.example.fundamentalplasmaparameters.IonSoundVelocity"
-            android:label="@string/title_activity_ion_sound_velocity" >
+            android:label="@string/title_activity_ion_sound_velocity"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.example.fundamentalplasmaparameters.AlfvenVelocity"
-            android:label="@string/title_activity_alfven_velocity" >
+            android:label="@string/title_activity_alfven_velocity"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.example.fundamentalplasmaparameters.BohmDiffusionCoefficient"
-            android:label="@string/title_activity_bohm_diffusion_coefficient" >
+            android:label="@string/title_activity_bohm_diffusion_coefficient"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.example.fundamentalplasmaparameters.SpitzerResistivity"
-            android:label="@string/title_activity_spitzer_resistivity" >
+            android:label="@string/title_activity_spitzer_resistivity"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.example.fundamentalplasmaparameters.ElectronProtonMassRatio"
-            android:label="@string/title_activity_electron_proton_mass_ratio" >
+            android:label="@string/title_activity_electron_proton_mass_ratio"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.example.fundamentalplasmaparameters.NumOfParticlesDebyeSphere"
-            android:label="@string/title_activity_num_of_particles_debye_sphere" >
+            android:label="@string/title_activity_num_of_particles_debye_sphere"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.example.fundamentalplasmaparameters.AlfvenVelocityLight"
-            android:label="@string/title_activity_alfven_velocity_light" >
+            android:label="@string/title_activity_alfven_velocity_light"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.example.fundamentalplasmaparameters.ElectronPlasmaGyroRatio"
-            android:label="@string/title_activity_electron_plasma_gyro_ratio" >
+            android:label="@string/title_activity_electron_plasma_gyro_ratio"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.example.fundamentalplasmaparameters.IonPlasmaGyroRatio"
-            android:label="@string/title_activity_ion_plasma_gyro_ratio" >
+            android:label="@string/title_activity_ion_plasma_gyro_ratio"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.example.fundamentalplasmaparameters.ThermalMagEnergyRatio"
-            android:label="@string/title_activity_thermal_mag_energy_ratio" >
+            android:label="@string/title_activity_thermal_mag_energy_ratio"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.example.fundamentalplasmaparameters.MagIonRestEnergyRatio"
-            android:label="@string/title_activity_mag_ion_rest_energy_ratio" >
+            android:label="@string/title_activity_mag_ion_rest_energy_ratio"
+            android:screenOrientation="portrait" >
         </activity>
     </application>
 

@@ -1,18 +1,12 @@
 package com.example.fundamentalplasmaparameters;
 
-import com.example.fundamentalplasmaparameters.R;
-import com.example.fundamentalplasmaparameters.R.anim;
-import com.example.fundamentalplasmaparameters.R.id;
-import com.example.fundamentalplasmaparameters.R.layout;
-import com.example.fundamentalplasmaparameters.R.menu;
-
+import com.ewit.FPP.*;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
 
@@ -53,13 +47,6 @@ public class ElectronCollisionRate extends Activity {
 		tExponent.addTextChangedListener(inputWatcher);
 		
 		vAnswer = (EditText)findViewById(R.id.answer_v);
-	}
-
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.electron_collision_rate, menu);
-		return true;
 	}
 
 	public void onBackPressed() {

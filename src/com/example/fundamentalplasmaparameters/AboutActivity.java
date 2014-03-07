@@ -1,11 +1,14 @@
 package com.example.fundamentalplasmaparameters;
 
-import android.os.Bundle;
+import com.ewit.FPP.*;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
-import android.view.Menu;
+import android.os.Bundle;
+import android.text.Html;
+import android.text.method.LinkMovementMethod;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 public class AboutActivity extends Activity {
 
@@ -16,13 +19,10 @@ public class AboutActivity extends Activity {
 		
 		ActionBar actionBar = getActionBar();
 		actionBar.setDisplayHomeAsUpEnabled(true);
-	}
-
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.about, menu);
-		return true;
+		
+		TextView feedback = (TextView) findViewById(R.id.site);
+		feedback.setText(Html.fromHtml("<a href=\"mailto:fundamentalplasmaparams@gmail.com?subject=Feedback or Suggestions\">Send Feedback</a>"));
+		feedback.setMovementMethod(LinkMovementMethod.getInstance());
 	}
 
 	@Override
