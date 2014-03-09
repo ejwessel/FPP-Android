@@ -134,7 +134,6 @@
 		        android:ems="10"
 		        android:inputType="numberDecimal|numberSigned"
 		        android:padding="5dp" >
-		        <requestFocus />
 		    </EditText>
 		    
             <TextView
