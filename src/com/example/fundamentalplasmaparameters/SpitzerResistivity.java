@@ -38,7 +38,7 @@ public class SpitzerResistivity extends Activity {
 		lambdaInput = (EditText)findViewById(R.id.lambdaInput);
 		lambdaInput.addTextChangedListener(inputWatcher);
 		
-		lambdaExponent = (EditText)findViewById(R.id.tExponent);
+		lambdaExponent = (EditText)findViewById(R.id.lambdaExponent);
 		lambdaExponent.addTextChangedListener(inputWatcher);
 
 		tInput = (EditText)findViewById(R.id.tInput);
